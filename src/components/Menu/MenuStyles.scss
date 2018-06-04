@@ -1,0 +1,100 @@
+@import '../../lib/styles/mixins.scss';
+@import '../../lib/styles/colors.scss';
+
+@media ( min-width: 761px ) {
+  .page-layout {
+    header.header {
+      .menu {
+        height: 128px;
+        max-width: 650px;
+        @include flex-mix();
+        flex-direction: row;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        flex-grow: 1;
+        .list {
+          padding: 0;
+          list-style: none;
+          @include flex-mix();
+          flex-grow: 1;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+
+          .list-item {
+            .nav-link {
+              color: $Black;
+              text-decoration: none;
+              font-size: 1rem;
+              font-weight: bold;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer.footer {
+    .menu {
+      height: 100%;
+      max-width: 760px;
+      @include flex-mix();
+      flex-direction: row;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      flex-grow: 1;
+      .list {
+        padding: 0;
+        list-style: none;
+        @include flex-mix();
+        flex-grow: 1;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .list-item {
+          @include flex-mix();
+          .nav-link {
+            opacity: .5;
+            color: $White;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@media ( max-width: 760px ) {
+  .page-layout {
+
+    header.header {
+      .menu {
+
+      }
+    }
+  }
+}
+
+// mobile
+@media ( max-width: 320px ) {
+  .page-layout {
+
+    header.header {
+      .menu {
+
+      }
+    }
+  }
+}

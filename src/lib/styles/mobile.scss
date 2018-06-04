@@ -1,0 +1,10 @@
+@import './mixins.scss';
+
+@media ( max-width: 320px ) {
+  .page-layout {
+    @include flex-mix();
+    margin: 0 auto;
+    max-width: 320px;
+
+  }
+}
