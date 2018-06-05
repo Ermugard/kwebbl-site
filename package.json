@@ -2,6 +2,7 @@
   "name": "kwebbl",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rostowner.github.io/kwebbl-site",
   "dependencies": {
     "node-sass-chokidar": "^1.3.0",
     "react": "^16.4.0",
