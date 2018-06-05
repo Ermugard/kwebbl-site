@@ -10,6 +10,11 @@ body {
   font-family: Lato, sans-serif;
 }
 
+.App {
+  /* be aware of this rule */
+  overflow: hidden;
+}
+
 h3 {
   font-size: 15px;
   letter-spacing: 1.2px;
