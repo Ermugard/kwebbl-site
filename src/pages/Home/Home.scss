@@ -186,7 +186,7 @@
           @include flex-mix();
           flex-direction: row;
           justify-content: space-between;
-          height: 1000px;
+          height: 990px;
           margin: 0 30px;
           position: relative;
 
@@ -219,18 +219,18 @@
             flex-basis: 497px;
             justify-content: flex-end;
             align-items: center;
-            padding-top: 28px;
           }
           .right {
             @include flex-mix();
             flex-direction: column;
             height: 100%;
             flex-basis: 556px;
-            padding-top: 227px;
+            align-items: flex-start;
+            justify-content: center;
 
             svg {
               margin-left: -28px;
-              margin-bottom: 0;
+              margin-bottom: 32px;
             }
             h2 {
               color: $White;
@@ -249,7 +249,29 @@
         }
       }
       &_5 {
+        .content {
+          @include flex-mix();
+          flex-direction: column;
+          align-items: center;
+          padding-top: 140px;
 
+          svg {
+            margin-bottom: 40px;
+          }
+          h2 {
+          }
+          p {
+            margin-top: 20px;
+            opacity: 0.5;
+            font-size: 22px;
+            text-align: center;
+            line-height: 1.45;
+            max-width: 550px;
+          }
+          img {
+            margin-top: 60px;
+          }
+        }
       }
       &_6 {
 
