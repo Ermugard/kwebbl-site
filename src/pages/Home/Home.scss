@@ -248,7 +248,7 @@
           }
         }
       }
-      &_5 {
+      &_5, &_6 {
         .content {
           @include flex-mix();
           flex-direction: column;
@@ -274,9 +274,8 @@
         }
       }
       &_6 {
-
+        
       }
-
     }
 
   }
