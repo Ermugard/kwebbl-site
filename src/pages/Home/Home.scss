@@ -137,7 +137,7 @@
           z-index: -1;
           width: 200%;
           height: 100%;
-          left: -25%;
+          left: -50%;
           background-color: $OffWhiteBg;
         }
 
@@ -193,8 +193,8 @@
           &:before {
             content: '';
             position: absolute;
-            top: 62px;
-            left: -29%;
+            top: 105px;
+            left: -50%;
             width: 200%;
             height: 500px;
             z-index: -1;

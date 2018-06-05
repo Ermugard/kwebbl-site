@@ -106,7 +106,7 @@
       z-index: -1;
       width: 200%;
       height: 100%;
-      left: -25%;
+      left: -50%;
       background-color: #fff7e8; }
     .home .section_3 .content {
       display: -webkit-box;
@@ -165,8 +165,8 @@
     .home .section_4 .content:before {
       content: '';
       position: absolute;
-      top: 62px;
-      left: -29%;
+      top: 105px;
+      left: -50%;
       width: 200%;
       height: 500px;
       z-index: -1;
