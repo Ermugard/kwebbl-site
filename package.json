@@ -1,7 +1,6 @@
 {
   "name": "kwebbl",
   "version": "0.1.0",
-  "homepage": "http://rostowner.github.io/kwebbl-site",
   "private": true,
   "dependencies": {
     "node-sass-chokidar": "^1.3.0",
@@ -13,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -b build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
