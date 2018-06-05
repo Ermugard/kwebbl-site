@@ -1,9 +1,0 @@
-@media (max-width: 320px) {
-  .page-layout {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    margin: 0 auto;
-    max-width: 320px; } }
