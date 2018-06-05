@@ -14,7 +14,7 @@ export default () => (
       </filter>
       <path id="b" d="M22 0h40c12.15 0 22 9.85 22 22v26c0 12.15-9.85 22-22 22h-8c-8.818 0-18.15 4.333-28 13V70h-4C9.85 70 0 60.15 0 48V22C0 9.85 9.85 0 22 0z"/>
     </defs>
-    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(30 20)">
+    <g fill="none" fillRule="evenodd" filter="url(#a)" transform="translate(30 20)">
       <rect width="120" height="120" fill="#FFF" rx="25"/>
       <g transform="translate(18 24)">
         <mask id="c" fill="#fff">

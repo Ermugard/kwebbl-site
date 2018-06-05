@@ -8,6 +8,8 @@ export default () => (<section className="section_6">
     <RocketIcon />
     <h2>The Unified Future</h2>
     <p>With the implementation of a full UC suite Kwebbl will be upgraded to a high end communications solution with secured video, chat and conferencing functionalities, available anywhere from any device.</p>
-    <img src={imgSrc} alt="schema" title="schema" />
+    <div className="carusel">
+      <img src={imgSrc} alt="schema" title="schema" />
+    </div>
   </div>
 </section>);

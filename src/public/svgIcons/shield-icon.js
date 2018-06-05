@@ -9,7 +9,7 @@ export default () => (
     <defs>
       <path id="a" d="M0 1v72h71.999V1z"/>
     </defs>
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <g transform="translate(0 -1)">
         <mask id="b" fill="#fff">
           <path d="M0 1v72h71.999V1z"/>

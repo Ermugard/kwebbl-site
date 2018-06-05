@@ -6,7 +6,7 @@ export default () => (
     width="22"
     height="22"
     viewBox="0 0 22 22">
-    <g fill="none" fill-rule="evenodd">
+    <g fill="none" fillRule="evenodd">
       <circle cx="11" cy="11" r="11" fill="#F1C010"/>
       <path
         fill="#FFF"
