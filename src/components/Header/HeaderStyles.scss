@@ -1,7 +1,7 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
-@media ( min-width: 761px ) {
+@media ( min-width: 800px ) {
   .page-layout {
     @include flex-mix();
 
@@ -42,7 +42,7 @@
 }
 
 // tablet
-@media ( max-width: 760px ) {
+@media ( max-width: 799px ) {
   .page-layout {
 
     header.header {
@@ -51,6 +51,7 @@
         width: 273px;
         height: 208px;
         object-fit: contain;
+        margin-left: 0;
         .desktop, .mobile {
           display: none;
         }

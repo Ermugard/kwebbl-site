@@ -1,11 +1,14 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
-@media ( min-width: 761px ) {
+@media ( min-width: 800px ) {
   .page-layout {
-    
+
     header.header {
       .menu {
+        .burger-button {
+          display: none;
+        }
         height: 128px;
         max-width: 650px;
         @include flex-mix();
@@ -77,12 +80,18 @@
 }
 
 // tablet
-@media ( max-width: 760px ) {
+@media ( max-width: 799px ) {
   .page-layout {
 
     header.header {
       .menu {
-
+        width: 1px;
+        height: 1px;
+        .burger-button {
+          @include flex-mix();
+          width: 22px;
+          height: 16px;
+        }
       }
     }
   }

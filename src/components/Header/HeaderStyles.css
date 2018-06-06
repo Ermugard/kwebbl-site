@@ -1,4 +1,4 @@
-@media (min-width: 761px) {
+@media (min-width: 800px) {
   .page-layout {
     display: -webkit-box;
     display: -moz-box;
@@ -46,7 +46,7 @@
           font-weight: bold;
           font-size: 1.06667rem; } }
 
-@media (max-width: 760px) {
+@media (max-width: 799px) {
   .page-layout header.header {
     display: -webkit-box;
     display: -moz-box;
@@ -62,7 +62,8 @@
     .page-layout header.header .logo {
       width: 273px;
       height: 208px;
-      object-fit: contain; }
+      object-fit: contain;
+      margin-left: 0; }
       .page-layout header.header .logo .desktop, .page-layout header.header .logo .mobile {
         display: none; } }
 

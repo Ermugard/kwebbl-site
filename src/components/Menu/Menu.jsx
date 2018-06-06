@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import BurgerButton from "../BurgerButton";
+
 
 import './MenuStyles.css';
 
 export default () => (<div className="menu">
+  <BurgerButton />
   <ul className="list">
     <li className="list-item">
       <Link className="nav-link" to="/service">For Service Provider</Link>

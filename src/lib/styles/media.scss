@@ -1,6 +1,16 @@
 @import './mixins.scss';
 
-@media ( min-width: 761px ) {
+.home,
+.service,
+.distributors,
+.culture,
+.stories,
+.press {
+  width: 100%;
+}
+
+/* desktop */
+@media ( min-width: 800px ) {
   .app {
     @include flex-mix();
     flex-direction: column;
@@ -25,5 +35,27 @@
 
   footer.footer {
     @include flex-mix();
+  }
+}
+
+/* tablet */
+@media ( max-width: 799px ) {
+  .page-layout {
+    @include flex-mix();
+    margin: 0 auto;
+    max-width: 768px;
+    min-width: 321px;
+
+  }
+}
+
+
+/* mobile */
+@media ( max-width: 320px ) {
+  .page-layout {
+    @include flex-mix();
+    margin: 0 auto;
+    max-width: 320px;
+
   }
 }

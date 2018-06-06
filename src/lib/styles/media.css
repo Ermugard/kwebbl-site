@@ -1,4 +1,13 @@
-@media (min-width: 761px) {
+.home,
+.service,
+.distributors,
+.culture,
+.stories,
+.press {
+  width: 100%; }
+
+/* desktop */
+@media (min-width: 800px) {
   .app {
     display: -webkit-box;
     display: -moz-box;
@@ -36,3 +45,26 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; } }
+
+/* tablet */
+@media (max-width: 799px) {
+  .page-layout {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    max-width: 768px;
+    min-width: 321px; } }
+
+/* mobile */
+@media (max-width: 320px) {
+  .page-layout {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    max-width: 320px; } }
