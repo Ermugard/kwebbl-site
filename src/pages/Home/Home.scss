@@ -1,7 +1,7 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
-@media ( min-width: 761px ) {
+@media ( min-width: 800px ) {
   .home {
     .section {
       &_1 {
@@ -369,7 +369,7 @@
 }
 
 // tablet
-@media ( max-width: 760px ) {
+@media ( min-width: 321px ) {
   .home {
     .section {
       &_1 {}

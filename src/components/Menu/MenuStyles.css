@@ -75,7 +75,7 @@
           line-height: normal;
           letter-spacing: normal; } }
 
-@media (max-width: 799px) {
+@media (min-width: 321px) {
   .page-layout header.header .logo {
     order: 1; }
   .page-layout header.header .contact-us {
@@ -160,6 +160,110 @@
       width: 30px;
       height: 30px;
       margin-right: 23px; }
+      .page-layout header.header.open .menu .burger-button .line {
+        border-width: 2px;
+        border-color: #fff; }
+        .page-layout header.header.open .menu .burger-button .line_1 {
+          transform: rotate(45deg) translate(4px, 11px);
+          -moz-transform: rotate(45deg) translate(4px, 11px);
+          -webkit-transform: rotate(45deg) translate(4px, 11px); }
+        .page-layout header.header.open .menu .burger-button .line_2 {
+          transform: rotate(45deg) translate(-6px, 1px);
+          -moz-transform: rotate(45deg) translate(-6px, 1px);
+          -webkit-transform: rotate(45deg) translate(-6px, 1px); }
+        .page-layout header.header.open .menu .burger-button .line_3 {
+          transform: rotate(135deg) translate(-8px, 15px);
+          -moz-transform: rotate(135deg) translate(-8px, 15px);
+          -webkit-transform: rotate(135deg) translate(-8px, 15px); } }
+
+@media (max-width: 320px) {
+  .page-layout header.header .logo {
+    order: 1; }
+  .page-layout header.header .menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    order: 3;
+    height: 40px;
+    width: 50px;
+    transition: background-color .2s, width .2s; }
+    .page-layout header.header .menu ul.list, .page-layout header.header .menu > .contact-us {
+      display: none; }
+    .page-layout header.header .menu .burger-button {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      width: 22px;
+      height: 16px;
+      justify-content: space-between; }
+      .page-layout header.header .menu .burger-button:hover {
+        cursor: pointer; }
+      .page-layout header.header .menu .burger-button .line {
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid #000; }
+  .page-layout header.header.open .menu {
+    height: 100%;
+    width: 100%;
+    background-color: #ef4500;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 20px;
+    transition: width .2s, background-color .2s; }
+    .page-layout header.header.open .menu ul.list, .page-layout header.header.open .menu > .contact-us {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+    .page-layout header.header.open .menu ul.list {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px; }
+      .page-layout header.header.open .menu ul.list .list-item {
+        margin-bottom: 25px; }
+        .page-layout header.header.open .menu ul.list .list-item .nav-link {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: none; }
+    .page-layout header.header.open .menu > .contact-us {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-grow: 1;
+      height: 102px;
+      width: 100%; }
+      .page-layout header.header.open .menu > .contact-us button {
+        width: 100%;
+        height: 42px;
+        margin: 50px 15px 0;
+        border: none;
+        border-radius: 100px;
+        background-color: #fff;
+        color: #ef4500;
+        font-weight: bold;
+        font-size: 1.06667rem; }
+    .page-layout header.header.open .menu .burger-button {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; }
       .page-layout header.header.open .menu .burger-button .line {
         border-width: 2px;
         border-color: #fff; }

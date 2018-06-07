@@ -46,7 +46,7 @@
           font-weight: bold;
           font-size: 1.06667rem; } }
 
-@media (max-width: 799px) {
+@media (min-width: 321px) {
   .page-layout header.header {
     display: -webkit-box;
     display: -moz-box;
@@ -107,4 +107,6 @@
       height: 208px;
       object-fit: contain; }
       .page-layout header.header .logo .tab, .page-layout header.header .logo .desktop {
-        display: none; } }
+        display: none; }
+    .page-layout header.header .contact-us {
+      display: none; } }

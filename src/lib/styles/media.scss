@@ -39,7 +39,7 @@
 }
 
 /* tablet */
-@media ( max-width: 799px ) {
+@media ( min-width: 321px ) {
   .page-layout {
     @include flex-mix();
     margin: 0 auto;

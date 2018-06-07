@@ -42,7 +42,7 @@
 }
 
 // tablet
-@media ( max-width: 799px ) {
+@media ( min-width: 321px ) {
   .page-layout {
 
     header.header {
@@ -98,6 +98,9 @@
         .tab, .desktop {
           display: none;
         }
+      }
+      .contact-us {
+        display: none;
       }
     }
   }

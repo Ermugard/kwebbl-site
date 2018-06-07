@@ -49,7 +49,7 @@
     display: flex; } }
 
 /* tablet */
-@media (max-width: 799px) {
+@media (min-width: 321px) {
   .page-layout {
     display: -webkit-box;
     display: -moz-box;
