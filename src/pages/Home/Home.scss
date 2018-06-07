@@ -372,7 +372,36 @@
 @media ( min-width: 321px ) {
   .home {
     .section {
-      &_1 {}
+      &_1 {
+        .content {
+          @include flex-mix();
+          flex-direction: column;
+          margin: 0 30px;
+          text-align: center;
+
+          .left {
+            @include flex-mix();
+            flex-direction: column;
+            align-items: center;
+            h3 {
+              color: $PumpkinOrange;
+              margin-bottom: 10px;
+            }
+            h2 {
+              max-width: 330px;
+              line-height: 1.7;
+              letter-spacing: 2.5px;
+              margin-bottom: 24px;
+            }
+            p {
+              opacity: 0.5;
+              font-size: 22px;
+              line-height: 1.45;
+              margin-bottom: 60px;
+            }
+          }
+        }
+      }
       &_2 {}
       &_3 {}
       &_4 {}
