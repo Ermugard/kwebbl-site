@@ -11,7 +11,7 @@
     justify-content: space-between;
     -webkit-justify-content: space-between;
     flex-grow: 1; }
-    .page-layout header.header .menu .burger-button {
+    .page-layout header.header .menu .burger-button, .page-layout header.header .menu .contact-us {
       display: none; }
     .page-layout header.header .menu .list {
       padding: 0;
@@ -76,14 +76,102 @@
           letter-spacing: normal; } }
 
 @media (max-width: 799px) {
+  .page-layout header.header .logo {
+    order: 1; }
+  .page-layout header.header .contact-us {
+    order: 2; }
   .page-layout header.header .menu {
-    width: 1px;
-    height: 1px; }
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    order: 3;
+    height: 60px;
+    width: 50px;
+    transition: background-color .2s, width .2s; }
+    .page-layout header.header .menu ul.list, .page-layout header.header .menu > .contact-us {
+      display: none; }
     .page-layout header.header .menu .burger-button {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      flex-direction: column;
+      align-self: flex-end;
       width: 22px;
-      height: 16px; } }
+      height: 16px;
+      justify-content: space-between; }
+      .page-layout header.header .menu .burger-button:hover {
+        cursor: pointer; }
+      .page-layout header.header .menu .burger-button .line {
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid #000; }
+  .page-layout header.header.open .delimiter {
+    display: block;
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0; }
+  .page-layout header.header.open .menu {
+    height: 100%;
+    width: 40%;
+    background-color: #ef4500;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 40px;
+    transition: width .2s, background-color .2s; }
+    .page-layout header.header.open .menu ul.list, .page-layout header.header.open .menu > .contact-us {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+    .page-layout header.header.open .menu ul.list {
+      list-style: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 45px; }
+      .page-layout header.header.open .menu ul.list .list-item {
+        margin-bottom: 25px; }
+        .page-layout header.header.open .menu ul.list .list-item .nav-link {
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: none; }
+    .page-layout header.header.open .menu > .contact-us {
+      flex-grow: 0;
+      margin-right: 0;
+      padding-right: 0; }
+      .page-layout header.header.open .menu > .contact-us button {
+        width: 200px;
+        color: #ef4500;
+        background-color: #fff; }
+    .page-layout header.header.open .menu .burger-button {
+      width: 30px;
+      height: 30px;
+      margin-right: 23px; }
+      .page-layout header.header.open .menu .burger-button .line {
+        border-width: 2px;
+        border-color: #fff; }
+        .page-layout header.header.open .menu .burger-button .line_1 {
+          transform: rotate(45deg) translate(4px, 11px);
+          -moz-transform: rotate(45deg) translate(4px, 11px);
+          -webkit-transform: rotate(45deg) translate(4px, 11px); }
+        .page-layout header.header.open .menu .burger-button .line_2 {
+          transform: rotate(45deg) translate(-6px, 1px);
+          -moz-transform: rotate(45deg) translate(-6px, 1px);
+          -webkit-transform: rotate(45deg) translate(-6px, 1px); }
+        .page-layout header.header.open .menu .burger-button .line_3 {
+          transform: rotate(135deg) translate(-8px, 15px);
+          -moz-transform: rotate(135deg) translate(-8px, 15px);
+          -webkit-transform: rotate(135deg) translate(-8px, 15px); } }

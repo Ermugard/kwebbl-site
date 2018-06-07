@@ -1,12 +1,12 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
-@media ( min-width: 800px ) {
+@media (min-width: 800px) {
   .page-layout {
 
     header.header {
       .menu {
-        .burger-button {
+        .burger-button, .contact-us {
           display: none;
         }
         height: 128px;
@@ -80,17 +80,131 @@
 }
 
 // tablet
-@media ( max-width: 799px ) {
+@media (max-width: 799px) {
   .page-layout {
 
     header.header {
+
+      .logo {
+        order: 1;
+      }
+
+      .contact-us {
+        order: 2;
+      }
+
       .menu {
-        width: 1px;
-        height: 1px;
+        @include flex-mix();
+        order: 3;
+        height: 60px;
+        width: 50px;
+        transition: background-color .2s, width .2s;
+
+        ul.list, & > .contact-us {
+          display: none;
+        }
+
         .burger-button {
           @include flex-mix();
+          flex-direction: column;
+          align-self: flex-end;
           width: 22px;
           height: 16px;
+          justify-content: space-between;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          .line {
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid $Black
+          }
+        }
+      }
+
+      &.open {
+        .delimiter {
+          display: block;
+          position: fixed;
+          width: 60%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          bottom: 0;
+        }
+        .menu {
+          height: 100%;
+          width: 40%;
+          background-color: $Orange;
+          flex-direction: column;
+          align-items: center;
+          position: fixed;
+          z-index: 3;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          padding-top: 40px;
+
+          transition: width .2s, background-color .2s;
+
+          ul.list, &>.contact-us {
+            @include flex-mix();
+          }
+
+          ul.list {
+            list-style: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+            .list-item {
+              margin-bottom: 25px;
+              .nav-link {
+                color: $White;
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+              }
+            }
+          }
+
+          &>.contact-us {
+            flex-grow: 0;
+            margin-right: 0;
+            padding-right: 0;
+            button {
+              width: 200px;
+              color: $Orange;
+              background-color: $White;
+            }
+          }
+
+          .burger-button {
+            width: 30px;
+            height: 30px;
+            margin-right: 23px;
+            .line {
+              border-width: 2px;
+              border-color:$White;
+
+              &_1 {
+                transform: rotate(45deg) translate(4px, 11px);
+                -moz-transform: rotate(45deg) translate(4px, 11px);
+                -webkit-transform: rotate(45deg) translate(4px, 11px);
+              }
+              &_2 {
+                transform: rotate(45deg) translate(-6px, 1px);
+                -moz-transform: rotate(45deg) translate(-6px, 1px);
+                -webkit-transform: rotate(45deg) translate(-6px, 1px);
+              }
+              &_3 {
+                transform: rotate(135deg) translate(-8px, 15px);
+                -moz-transform: rotate(135deg) translate(-8px, 15px);
+                -webkit-transform: rotate(135deg) translate(-8px, 15px);
+              }
+            }
+          }
         }
       }
     }
@@ -98,7 +212,7 @@
 }
 
 // mobile
-@media ( max-width: 320px ) {
+@media (max-width: 320px) {
   .page-layout {
 
     header.header {

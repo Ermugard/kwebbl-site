@@ -57,8 +57,21 @@
     display: -webkit-flex;
     display: flex;
     margin: 0 auto;
-    max-width: 768px;
-    min-width: 321px; } }
+    max-width: 799px;
+    min-width: 321px; }
+    .page-layout header.header {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+    .page-layout main.main {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 100%; } }
 
 /* mobile */
 @media (max-width: 320px) {
@@ -69,4 +82,17 @@
     display: -webkit-flex;
     display: flex;
     margin: 0 auto;
-    max-width: 320px; } }
+    max-width: 320px; }
+    .page-layout header.header {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+    .page-layout main.main {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 100%; } }

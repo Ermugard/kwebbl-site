@@ -56,6 +56,31 @@
           display: none;
         }
       }
+      .contact-us {
+        @include flex-mix();
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        height: 102px;
+        margin-right: 30px;
+
+        button {
+          width: 140px;
+          height: 42px;
+          border: none;
+          border-radius: 100px;
+          background-color: $Orange;
+          color: $White;
+          font-weight: bold;
+          @include font-size(16px);
+        }
+      }
+
+      &.open {
+        .contact-us {
+          display: none;
+        }
+      }
     }
   }
 }

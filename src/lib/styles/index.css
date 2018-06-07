@@ -29,3 +29,7 @@ h2 {
   line-height: 1.52;
   letter-spacing: 2.3px;
 }
+
+.delimiter {
+  display: none;
+}

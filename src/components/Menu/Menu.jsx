@@ -1,12 +1,14 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import BurgerButton from "../BurgerButton";
+import ContactButton from '../ContactButton';
 
 
 import './MenuStyles.css';
 
-export default () => (<div className="menu">
-  <BurgerButton />
+export default ({open, toggleMenu}) => (
+  <div className="menu">
+  <BurgerButton onClick={toggleMenu}/>
   <ul className="list">
     <li className="list-item">
       <Link className="nav-link" to="/service">For Service Provider</Link>
@@ -24,4 +26,6 @@ export default () => (<div className="menu">
       <Link className="nav-link" to="/press">Press</Link>
     </li>
   </ul>
-</div>);
+  <ContactButton />
+</div>
+);
