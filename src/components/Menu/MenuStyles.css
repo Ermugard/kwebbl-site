@@ -2,6 +2,7 @@
   .page-layout header.header .menu {
     height: 128px;
     max-width: 650px;
+    min-width: 550px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

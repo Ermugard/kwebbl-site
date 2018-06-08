@@ -1,0 +1,119 @@
+@import '../../lib/styles/mixins.scss';
+@import '../../lib/styles/colors.scss';
+
+.service {
+  .content {
+    @include flex-mix();
+    margin: 0 30px;
+    width: 100%;
+  }
+  .section {
+    &_1 {
+      .content {
+
+      }
+    }
+    &_2 {
+      .content {
+
+      }
+    }
+    &_3 {
+      .content {
+
+      }
+    }
+    &_4 {
+      .content {
+
+      }
+    }
+    &_5 {
+      .content {
+
+      }
+    }
+    &_6 {
+      .content {
+
+      }
+    }
+    &_7 {
+      .content {
+
+      }
+    }
+    &_8 {
+      .content {
+
+      }
+    }
+    &_9 {
+      .content {
+
+      }
+    }
+  }
+}
+
+@media ( min-width: 800px ) {
+  .service {
+    .section {
+      &_1 {
+        .content {
+
+        }
+      }
+      &_2 {
+        .content {
+
+        }
+      }
+      &_3 {
+        .content {
+
+        }
+      }
+      &_4 {
+        .content {
+
+        }
+      }
+      &_5 {
+        .content {
+
+        }
+      }
+      &_6 {
+        .content {
+
+        }
+      }
+      &_7 {
+        .content {
+
+        }
+      }
+      &_8 {
+        .content {
+
+        }
+      }
+      &_9 {
+        .content {
+
+        }
+      }
+    }
+  }
+}
+
+// tablet
+@media ( min-width: 321px ) and ( max-width: 799px ) {
+
+}
+
+// mobile
+@media ( max-width: 320px ) {
+
+}
