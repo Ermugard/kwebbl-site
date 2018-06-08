@@ -369,7 +369,7 @@
 }
 
 // tablet
-@media ( min-width: 321px ) {
+@media ( min-width: 321px ) and ( max-width: 799px ) {
   .home {
     .section {
       &_1 {

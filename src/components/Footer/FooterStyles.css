@@ -96,7 +96,7 @@
           width: 60px;
           justify-content: space-between; } }
 
-@media (min-width: 321px) {
+@media (min-width: 321px) and (max-width: 799px) {
   footer.footer {
     background-color: #ef4304;
     flex-direction: column; }

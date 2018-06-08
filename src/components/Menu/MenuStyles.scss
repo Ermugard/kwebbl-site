@@ -51,6 +51,9 @@
       justify-content: space-between;
       -webkit-justify-content: space-between;
       flex-grow: 1;
+      .contact-us, .burger-button {
+        display: none;
+      }
       .list {
         padding: 0;
         list-style: none;
@@ -80,7 +83,7 @@
 }
 
 // tablet
-@media (min-width: 321px) {
+@media (min-width: 321px) and ( max-width: 799px ) {
   .page-layout {
 
     header.header {

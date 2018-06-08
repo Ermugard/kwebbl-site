@@ -319,7 +319,7 @@
               opacity: 1;
               color: #fb8e0d; } }
 
-@media (min-width: 321px) {
+@media (min-width: 321px) and (max-width: 799px) {
   .home .section_1 .home-head-bg:before {
     content: "";
     background-color: #fff7e8;
