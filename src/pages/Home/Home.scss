@@ -525,7 +525,55 @@
           }
         }
       }
-      &_4 {}
+      &_4 {
+        .content {
+          @include flex-mix();
+          padding: 100px 30px 105px;
+          position: relative;
+          align-items: stretch;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            z-index: -1;
+            background-color: $LighterYellowBg;
+          }
+
+          .left {
+            text-align: center;
+            width: 50%;
+            img {
+              max-width: 319px;
+              max-height: 560px;
+            }
+          }
+          .right {
+            width: 50%;
+            color: $White;
+
+            svg {
+              display: none;
+            }
+            h2 {
+              max-width: 253px;
+            }
+            p {
+              max-width: 323px;
+              opacity: 0.7;
+              font-size: 22px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.45;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
       &_5, &_6 {}
       &_6 {}
     }
