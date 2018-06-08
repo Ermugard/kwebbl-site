@@ -33,6 +33,8 @@ class HomeCarousel extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
+      adaptiveHeight: true,
+      variableWidth: true,
       appendDots: dots => (<div className="thumbs">
         <h3>Work from Anywhere with any Device</h3>
         <ul>{dots}</ul>
