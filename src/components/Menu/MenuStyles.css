@@ -174,7 +174,9 @@
         .page-layout header.header.open .menu .burger-button .line_3 {
           transform: rotate(135deg) translate(-8px, 15px);
           -moz-transform: rotate(135deg) translate(-8px, 15px);
-          -webkit-transform: rotate(135deg) translate(-8px, 15px); } }
+          -webkit-transform: rotate(135deg) translate(-8px, 15px); }
+  footer.footer .menu {
+    display: none; } }
 
 @media (max-width: 320px) {
   .page-layout header.header .logo {
