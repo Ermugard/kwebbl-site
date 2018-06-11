@@ -41,3 +41,7 @@ h2 {
 .delimiter {
   display: none;
 }
+
+input:active, input:focus {
+  outline: none;
+}

@@ -1,12 +1,15 @@
 import React from 'react';
 
+import imgSrc from '../../../public/images/service-section3.png';
+import Shield from '../../../public/svgIcons/shield-icon.js';
+
 export default () => (<div className="section_3">
   <div className="content">
     <div className="left">
-      {/*<img src="" />*/}
+      <img src={imgSrc} alt="" title="" />
     </div>
     <div className="right">
-      {/* svg */}
+      <Shield />
       <h3>Security</h3>
       <h2>Advanced fraud prevention</h2>
       <p>Kwebbl continuously monitors all call flows using her intelligent and self-learning algorithms that detect and eliminate fraud behaviour. </p>
