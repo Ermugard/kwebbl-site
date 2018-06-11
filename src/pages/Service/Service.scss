@@ -210,12 +210,54 @@
       }
       &_5 {
         .content {
-
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 130px;
+          margin-bottom: 162px;
+          h2, p {
+            max-width: 531px;
+          }
+          img {
+            margin-top: 68px;
+          }
         }
       }
       &_6 {
         .content {
-
+          position: relative;
+          padding-top: 110px;
+          padding-bottom: 154px;
+          &:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: -25%;
+            height: 100%;
+            width: 200%;
+            background-color: $OffWhiteBg;
+          }
+          .left, .right {
+            @include flex-mix();
+            width: 50%;
+          }
+          .left {
+            flex-direction: column;
+          }
+          .right {
+            flex-direction: row;
+            align-items: center;
+          }
+          svg {
+            margin-top: 0;
+          }
+          h2 {
+            max-width: 400px;
+          }
+          p {
+            max-width: 510px;
+          }
         }
       }
       &_7 {
