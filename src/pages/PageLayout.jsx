@@ -5,7 +5,7 @@ import Home from '../pages/Home/Home';
 import Service from './Service/Service';
 import Distributors from './Distributors/Distributors';
 import Culture from './Culture/Culture';
-import Stories from '../pages/Stories';
+import Stories from './Stories/Stories';
 import Press from '../pages/Press';
 
 

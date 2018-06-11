@@ -1,0 +1,149 @@
+.stories .content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 30px;
+  width: 100%; }
+  .stories .content h3 {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    color: #fa8707; }
+  .stories .content h2 {
+    font-size: 27px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.52;
+    letter-spacing: 2.3px;
+    margin-top: 5px; }
+  .stories .content p {
+    opacity: .5;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    margin-top: 20px; }
+
+.stories .section_1 .stories-head-bg:before {
+  content: "";
+  background-color: #fff7e8;
+  z-index: -1;
+  position: absolute;
+  top: -348px;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  transform: skewY(-9deg); }
+
+.stories .section_1 .content {
+  margin-top: 100px; }
+  .stories .section_1 .content .left, .stories .section_1 .content .right {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    width: 50%; }
+  .stories .section_1 .content .left {
+    align-items: flex-start;
+    justify-content: center; }
+  .stories .section_1 .content .right {
+    align-items: flex-start;
+    justify-content: center; }
+  .stories .section_1 .content h2 {
+    max-width: 377px;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 2.5px; }
+
+.stories .section_2 .content {
+  margin-top: 200px;
+  flex-direction: column; }
+  .stories .section_2 .content .story {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    max-width: 750px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: solid 1px #e5e5e5; }
+    .stories .section_2 .content .story .left, .stories .section_2 .content .story .right {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column; }
+    .stories .section_2 .content .story .left {
+      width: 40%;
+      justify-content: center;
+      align-items: center; }
+    .stories .section_2 .content .story .right {
+      width: 60%;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .stories .section_2 .content .story p {
+      max-width: 408px;
+      opacity: 0.6;
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56; }
+    .stories .section_2 .content .story h2 {
+      text-transform: capitalize; }
+    .stories .section_2 .content .story .link-button {
+      margin-top: 20px;
+      border-radius: 100px;
+      background-color: #fff;
+      border: solid 2px rgba(239, 69, 0, 0.3);
+      color: #EF4500;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 14px 30px;
+      text-decoration: none; }
+  .stories .section_2 .content .load-more-block {
+    max-width: 750px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 140px; }
+    .stories .section_2 .content .load-more-block .load-more {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 14px 10px;
+      background-color: #EF4500;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 100px;
+      width: 182px; }
+      .stories .section_2 .content .load-more-block .load-more span {
+        opacity: .5;
+        margin-left: 7px; }
