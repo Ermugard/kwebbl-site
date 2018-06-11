@@ -18,7 +18,7 @@ const sliderData = [{
 }];
 
 const CustomSlideBlock = ({ item }) => {
-  return (<div>
+  return (<div className="culture-slider-item">
   <img src={item.imgSrc} title="" alt="" />
   <h3>{item.title}</h3>
   <p>{item.text}</p>
@@ -34,9 +34,7 @@ class CultureCarousel extends Component {
       className: "center",
       slidesToShow: 1,
       slidesToScroll: 1,
-      swipeToSlide: true,
-      adaptiveHeight: true,
-      variableWidth: true
+      swipeToSlide: true
     };
 
     return (<Slider {...settings}>
