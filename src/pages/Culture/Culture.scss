@@ -89,17 +89,109 @@
           }
         }
       }
-      &_2 {
-        .content {
+    }
+    &_2 {
+      .content {
+        padding-top: 103px;
+        padding-bottom: 120px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          width: 200%;
+          height: 100%;
+          top: 0;
+          left: -25%;
+          background-color: $OffWhiteBg;
+        }
+
+        p {
+          max-width: 586px;
+          text-align: center;
+        }
+
+        .images-block {
+          @include flex-mix();
+          margin-top: 61px;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 100%;
+
+          .item {
+            @include flex-mix();
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 304px;
+
+            p {
+              opacity: 1;
+              color: $Black;
+              font-size: 16px;
+              font-weight: 900;
+              letter-spacing: 1.2px;
+              text-transform: uppercase;
+            }
+          }
         }
       }
-      &_3 {
-        .content {
+    }
+    &_3 {
+      .content {
+        padding-top: 110px;
+        padding-bottom: 200px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        p {
+          max-width: 510px;
+        }
+        .images-block {
+          position: relative;
+          width: 100%;
+          height: 1250px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 200%;
+            height: 60%;
+            left: -25%;
+            bottom: 0;
+            background-color: $OffWhiteBg;
+          }
+
+          .img1, .img2, .img3 {
+            position: absolute;
+            width: 530px;
+            height: 530px;
+          }
+          .img1 {
+            z-index: 2;
+            top: 83px;
+            right: 150px;
+          }
+          .img2 {
+            z-index: 1;
+            top: 293px;
+            right: 550px;
+          }
+          .img3 {
+            z-index: 0;
+            top: 550px;
+            right: 270px;
+          }
         }
       }
-      &_4 {
-        .content {
-        }
+    }
+    &_4 {
+      .content {
+
       }
     }
   }

@@ -75,3 +75,87 @@
       font-stretch: normal;
       line-height: 1.45;
       max-width: 440px; }
+
+.culture .section_2 .content {
+  padding-top: 103px;
+  padding-bottom: 120px;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  .culture .section_2 .content:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: -25%;
+    background-color: #fff7e8; }
+  .culture .section_2 .content p {
+    max-width: 586px;
+    text-align: center; }
+  .culture .section_2 .content .images-block {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 61px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
+    .culture .section_2 .content .images-block .item {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 304px; }
+      .culture .section_2 .content .images-block .item p {
+        opacity: 1;
+        color: #000;
+        font-size: 16px;
+        font-weight: 900;
+        letter-spacing: 1.2px;
+        text-transform: uppercase; }
+
+.culture .section_3 .content {
+  padding-top: 110px;
+  padding-bottom: 200px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center; }
+  .culture .section_3 .content p {
+    max-width: 510px; }
+  .culture .section_3 .content .images-block {
+    position: relative;
+    width: 100%;
+    height: 1250px; }
+    .culture .section_3 .content .images-block:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 200%;
+      height: 60%;
+      left: -25%;
+      bottom: 0;
+      background-color: #fff7e8; }
+    .culture .section_3 .content .images-block .img1, .culture .section_3 .content .images-block .img2, .culture .section_3 .content .images-block .img3 {
+      position: absolute;
+      width: 530px;
+      height: 530px; }
+    .culture .section_3 .content .images-block .img1 {
+      z-index: 2;
+      top: 83px;
+      right: 150px; }
+    .culture .section_3 .content .images-block .img2 {
+      z-index: 1;
+      top: 293px;
+      right: 550px; }
+    .culture .section_3 .content .images-block .img3 {
+      z-index: 0;
+      top: 550px;
+      right: 270px; }

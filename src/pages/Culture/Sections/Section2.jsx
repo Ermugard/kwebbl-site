@@ -8,11 +8,22 @@ export default () => (<div className="section_2">
   <div className="content">
     <h3>Our Values</h3>
     <h2>Partnership & innovation</h2>
-    <p>We believe in long-term and honest partnerships, where we can provide our partners with the latest innovations in communication so that they can focus on their service to customers. All of this whilst remaining independent from large carriers or vendors.</p>
+    <p>We believe in long-term and honest partnerships, where we can provide our partners with the latest innovations in
+      communication so that they can focus on their service to customers. All of this whilst remaining independent from
+      large carriers or vendors.</p>
     <div className="images-block">
-      <img src={img1} alt="" title="" />
-      <img src={img2} alt="" title="" />
-      <img src={img3} alt="" title="" />
+      <div className="item">
+        <img src={img1} alt="" title=""/>
+        <p>Partnerships</p>
+      </div>
+      <div className="item">
+        <img src={img2} alt="" title=""/>
+        <p>Innovation</p>
+      </div>
+      <div className="item">
+        <img src={img3} alt="" title=""/>
+        <p>Independence</p>
+      </div>
     </div>
   </div>
 </div>)
