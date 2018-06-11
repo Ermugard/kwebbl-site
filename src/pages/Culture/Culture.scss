@@ -1,0 +1,106 @@
+@import '../../lib/styles/mixins.scss';
+@import '../../lib/styles/colors.scss';
+
+.culture {
+  .content {
+    @include flex-mix();
+    margin: 0 30px;
+    width: 100%;
+
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      color: $PumpkinOrange;
+    }
+    h2 {
+      font-size: 27px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.52;
+      letter-spacing: 2.3px;
+      margin-top: 5px;
+    }
+    p {
+      opacity: .5;
+      font-size: 22px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.45;
+      letter-spacing: normal;
+      margin-top: 20px;
+    }
+  }
+
+  .section {
+    &_1 {
+      .content {
+        height: 861px;
+        margin-top: 90px;
+        position: relative;
+        img {
+          position: absolute;
+          z-index: 0;
+          top: 90px;
+          right: 100px;
+        }
+        .text-block {
+          position: absolute;
+          z-index: 1;
+          background-color: $OrangeBg;
+          color: $White;
+          padding: 60px;
+          width: 480px;
+          height: 350px;
+          top: 160px;
+
+          h3 {
+            color: $White;
+            opacity: 0.7;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1.2px;
+          }
+          h2 {
+            font-size: 32px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: 2.5px;
+            max-width: 470px;
+          }
+          p {
+            opacity: 1;
+            font-size: 22px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.45;
+            max-width: 440px;
+          }
+        }
+      }
+      &_2 {
+        .content {
+        }
+      }
+      &_3 {
+        .content {
+        }
+      }
+      &_4 {
+        .content {
+        }
+      }
+    }
+  }
+}
