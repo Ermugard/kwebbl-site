@@ -6,6 +6,38 @@
     @include flex-mix();
     margin: 0 30px;
     width: 100%;
+
+    svg {
+      margin-bottom: 35px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      color: $PumpkinOrange;
+    }
+    h2 {
+      font-size: 27px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.52;
+      letter-spacing: 2.3px;
+      margin-top: 5px;
+    }
+    p {
+      opacity: .5;
+      font-size: 22px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.45;
+      letter-spacing: normal;
+      margin-top: 20px;
+    }
   }
   .section {
     &_1 {
@@ -61,17 +93,49 @@
     .section {
       &_1 {
         .content {
+          flex-direction: row;
+          margin-top: 100px;
 
+          h2 {
+            font-size: 32px;
+            line-height: 1.5;
+            letter-spacing: 2.5px;
+            max-width: 350px;
+          }
+          p {
+            max-width: 483px;
+          }
+
+          img {
+            @include flex-mix();
+            align-self: flex-end;
+          }
         }
       }
       &_2 {
         .content {
-
+          justify-content: space-between;
+          margin-top: 162px;
+          h2 {
+            max-width: 300px;
+          }
+          p {
+            max-width: 550px;
+          }
+          .left, .right {
+            width: 50%;
+          }
+          .right {
+            justify-content: center;
+          }
         }
       }
       &_3 {
         .content {
-
+          margin-top: 120px;
+          .left, .right {
+            width: 50%;
+          }
         }
       }
       &_4 {

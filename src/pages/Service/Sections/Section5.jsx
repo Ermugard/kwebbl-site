@@ -2,6 +2,9 @@ import React from 'react';
 
 export default () => (<div className="section_5">
   <div className="content">
-    section5
+    <h2>One cloud platform
+      for all your global customers</h2>
+    <p>With Kwebbl you can scale your services across the world. Our private cloud and advanced localisation options give you the opportunity to provide world-wide service from one single cloud platform.</p>
+    {/*<img />*/}
   </div>
 </div>)

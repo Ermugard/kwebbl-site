@@ -11,6 +11,8 @@ import Section7 from './Sections/Section7';
 import Section8 from './Sections/Section8';
 import Section9 from './Sections/Section9';
 
+import './Service.css';
+
 export default () => (<div className="service">
   <Header />
   <Section1 />
