@@ -128,10 +128,6 @@
       }
 
 
-      .contact-us.nav-link {
-        display: none;
-      }
-
       &.open {
         .delimiter {
           display: block;
@@ -143,8 +139,8 @@
           bottom: 0;
         }
 
-        .contact-us.nav-link {
-          display: block;
+        .contact-us {
+          display: none;
         }
 
         .menu {
@@ -186,7 +182,7 @@
             flex-grow: 0;
             margin-right: 0;
             padding-right: 0;
-            button {
+            a {
               width: 200px;
               color: $Orange;
               background-color: $White;
