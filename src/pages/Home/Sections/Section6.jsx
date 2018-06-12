@@ -2,6 +2,7 @@ import React from 'react';
 import RocketIcon from '../../../public/svgIcons/rocket-icon.js';
 
 import Carousel from '../HomeCarousel';
+import MobileCarousel from '../HomeCarouselMobile';
 
 export default () => (<section className="section_6">
   <div className="content">
@@ -10,6 +11,7 @@ export default () => (<section className="section_6">
     <p>With the implementation of a full UC suite Kwebbl will be upgraded to a high end communications solution with secured video, chat and conferencing functionalities, available anywhere from any device.</p>
     <div className="carousel">
       <Carousel />
+      <MobileCarousel />
     </div>
   </div>
 </section>);

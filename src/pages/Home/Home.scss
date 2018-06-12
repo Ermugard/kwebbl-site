@@ -1,7 +1,7 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
-@media ( min-width: 800px ) {
+@media (min-width: 800px) {
   .home {
     .section {
       &_1 {
@@ -56,7 +56,9 @@
 
         .content {
           margin: 0 30px;
-          .slick-slider { display: none;}
+          .slick-slider {
+            display: none;
+          }
           .section-title {
             padding-top: 152px;
             h2, h3 {
@@ -95,7 +97,7 @@
                   margin-bottom: 70px;
                   position: relative;
 
-                  &>svg {
+                  & > svg {
                     position: absolute;
                     top: -3px;
                     left: -1px;
@@ -274,6 +276,10 @@
           height: 1000px;
           padding-bottom: 95px;
 
+          .home-main-mobile-carousel {
+            display: none;
+          }
+
           .slick-slider {
             height: 100%;
             .slick-list {
@@ -368,7 +374,7 @@
 }
 
 // tablet
-@media ( min-width: 321px ) and ( max-width: 799px ) {
+@media (min-width: 321px) and (max-width: 799px) {
   .home {
     .section {
       &_1 {
@@ -418,7 +424,9 @@
           flex-direction: column;
           margin: 0 30px 100px;
 
-          .slick-slider { display: none;}
+          .slick-slider {
+            display: none;
+          }
 
           .section-title {
             text-align: center;
@@ -610,6 +618,10 @@
           height: 840px;
           padding-bottom: 95px;
 
+          .home-main-mobile-carousel {
+            display: none;
+          }
+
           .slick-slider {
             height: 100%;
             img {
@@ -706,7 +718,7 @@
 }
 
 // mobile
-@media ( max-width: 320px ) {
+@media (max-width: 320px) {
   .page-layout {
     .home {
 
@@ -791,7 +803,9 @@
                 h2, h3 {
                   display: none;
                 }
-                &>ul { display: none; }
+                & > ul {
+                  display: none;
+                }
                 .slick-slider {
                   height: 250px;
                   .carousel-item {
@@ -842,7 +856,9 @@
                   }
                 }
               }
-              .right { display: none; }
+              .right {
+                display: none;
+              }
             }
           }
         }
@@ -861,7 +877,9 @@
               background-color: $OffWhiteBg;
             }
 
-            .left { display: none; }
+            .left {
+              display: none;
+            }
             .right {
               order: 1;
               text-align: center;
@@ -902,7 +920,9 @@
               background-color: $LighterYellowBg;
             }
 
-            .left { display: none; }
+            .left {
+              display: none;
+            }
             .right {
               @include flex-mix();
               flex-direction: column;
@@ -927,57 +947,77 @@
         }
         &_5, &_6 {
           .content {
-            @include flex-mix();
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 0 30px;
 
             svg {
-              margin-top: 100px;
+              margin-top: 70px;
             }
             h2 {
-              margin-top: 35px;
+              margin-top: 25px;
             }
             p {
-              max-width: 510px;
-              margin-top: 20px;
+              text-align: left;
               opacity: 0.5;
-              font-size: 22px;
+              font-size: 18px;
               font-weight: normal;
               font-style: normal;
               font-stretch: normal;
-              line-height: 1.45;
+              line-height: 1.5;
+              margin-bottom: 20px;
             }
             img {
-              margin-top: 60px;
+              display: none;
             }
           }
         }
         &_6 {
           .carousel {
             width: 100%;
-            height: 840px;
-            padding-bottom: 95px;
+
+            .home-main-carousel {
+              display: none;
+            }
+
+            .home-main-mobile-carousel > h3 {
+              font-size: 22px;
+              font-weight: normal;
+              text-transform: none;
+              line-height: 1.45;
+              color: $OrangeText;
+            }
 
             .slick-slider {
               height: 100%;
+              margin-top: 50px;
               img {
                 max-width: 60%;
               }
               .slick-list {
-                height: 630px;
+                .home-main-mobile-carousel-item {
+                  @include flex-mix();
+                  flex-direction: column;
+                  justify-content: center;
+                  align-content: center;
+                  h3 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: none;
+                    color: $Black;
+                    margin-bottom: 10px;
+                  }
+                  p {
+                    font-size: 16px;
+                    line-height: 1.56;
+                    text-align: center;
+                  }
+                }
               }
               .slick-dots {
-                bottom: 0;
-                & > h3 {
-                  font-size: 22px;
-                  font-weight: normal;
-                  text-transform: none;
-                  line-height: 1.45;
-                  color: $OrangeText;
-                  margin-bottom: 80px;
-                }
+                bottom: auto;
+                top: -10px;
+
                 ul {
                   @include flex-mix();
                   flex-direction: row;
@@ -988,10 +1028,10 @@
                     content: '';
                     z-index: -1;
                     position: absolute;
-                    left: 15%;
-                    top: 126px;
+                    left: 13%;
+                    top: 15px;
                     height: 0;
-                    width: 70%;
+                    width: 74%;
                     border-top: 1px dashed $OrangeText;
                   }
 
@@ -1022,18 +1062,6 @@
                       font-size: 16px;
                       font-weight: bold;
                       position: relative;
-                    }
-                    h3 {
-                      font-size: 18px;
-                      font-weight: bold;
-                      text-transform: none;
-                      color: $Black;
-                      margin-bottom: 10px;
-                    }
-                    p {
-                      font-size: 16px;
-                      line-height: 1.56;
-                      text-align: center;
                     }
                     &.slick-active {
                       .number {
