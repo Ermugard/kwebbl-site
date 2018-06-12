@@ -91,7 +91,7 @@
 
     header.header {
       @include header-mix();
-      height: 150px;
+      height: 100px;
       .logo {
         width: 273px;
         height: 208px;
