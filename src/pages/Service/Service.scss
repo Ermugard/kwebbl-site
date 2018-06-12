@@ -2,6 +2,11 @@
 @import '../../lib/styles/colors.scss';
 
 .service {
+
+  .section_4 {
+    display: none;
+  }
+
   .content {
     @include flex-mix();
     margin: 0 30px;
