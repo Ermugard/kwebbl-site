@@ -224,7 +224,7 @@
 
       .left, .right {
         @include flex-mix();
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         font-size: 19px;
         font-weight: bold;
