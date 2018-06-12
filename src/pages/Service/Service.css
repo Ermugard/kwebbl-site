@@ -225,3 +225,130 @@
     .service .section_9 .content p {
       font-size: 22px;
       line-height: 1.45; } }
+
+@media (min-width: 321px) and (max-width: 799px) {
+  .service .content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+    .service .content .left, .service .content .right {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .service .content h3, .service .content h2, .service .content p {
+      text-align: center;
+      font-style: normal;
+      font-stretch: normal; }
+    .service .content h3 {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      color: #fa8707;
+      margin-top: 35px; }
+    .service .content h2 {
+      font-size: 27px;
+      font-weight: bold;
+      line-height: 1.52;
+      letter-spacing: 2.3px;
+      margin-top: 5px; }
+    .service .content p {
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 1.45;
+      letter-spacing: normal;
+      margin-top: 20px;
+      max-width: 560px; }
+    .service .content img {
+      margin-top: 70px;
+      max-width: 585px; }
+    .service .content svg {
+      margin-bottom: 0; }
+  .service .section_1 .content .left h3 {
+    margin-top: 0; }
+  .service .section_1 .content .left h2 {
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 2.5px; }
+  .service .section_2 .content {
+    margin-top: 110px; }
+    .service .section_2 .content h2 {
+      max-width: 300px; }
+  .service .section_3 .content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column-reverse;
+    position: relative; }
+    .service .section_3 .content:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -25%;
+      height: 100%;
+      width: 200%;
+      background-color: #fff7e8; }
+  .service .section_5 .content {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .service .section_5 .content h2 {
+      max-width: 531px; }
+  .service .section_6 .content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative; }
+    .service .section_6 .content:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -25%;
+      height: 100%;
+      width: 200%;
+      background-color: #fff7e8; }
+    .service .section_6 .content h2 {
+      margin-top: 35px;
+      max-width: 400px; }
+    .service .section_6 .content p {
+      max-width: 510px; }
+  .service .section_7 .content {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .service .section_7 .content h2 {
+      margin-top: 35px;
+      max-width: 400px; }
+    .service .section_7 .content p {
+      max-width: 510px; }
+  .service .section_8 .content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative; }
+    .service .section_8 .content:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: -25%;
+      height: 100%;
+      width: 200%;
+      background-color: #fff7e8; }
+    .service .section_8 .content h2 {
+      margin-top: 35px;
+      max-width: 400px; }
+    .service .section_8 .content p {
+      max-width: 510px; }
+  .service .section_9 .content {
+    flex-direction: column-reverse;
+    margin-top: 70px;
+    margin-bottom: 100px; } }
