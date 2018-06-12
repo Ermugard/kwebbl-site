@@ -112,6 +112,8 @@
         width: 100%;
         height: 1px;
         border-top: 1px solid #000; }
+  .page-layout header.header .contact-us.nav-link {
+    display: none; }
   .page-layout header.header.open .delimiter {
     display: block;
     position: fixed;
@@ -120,6 +122,8 @@
     left: 0;
     top: 0;
     bottom: 0; }
+  .page-layout header.header.open .contact-us.nav-link {
+    display: block; }
   .page-layout header.header.open .menu {
     height: 100%;
     width: 40%;

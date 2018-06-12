@@ -1,0 +1,172 @@
+@import '../../lib/styles/mixins.scss';
+@import '../../lib/styles/colors.scss';
+
+.header-orange {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: $PumpkinOrange;
+}
+
+.header-tt-black {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.52;
+  letter-spacing: 2.3px;
+  margin-top: 5px;
+}
+
+.red-text {
+  color: $BloodOrange;
+}
+.black-text {
+  color: #000;
+}
+
+.error-validation {
+  input.input {
+    border-color: $BloodOrange;
+  }
+}
+
+.input {
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: solid 1px $GreyBorder;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  height: 48px;
+  padding: 0.5rem;
+  padding-left: 20px;
+  color: #000;
+  font-size: 16px;
+
+  @include placeholder($GreyPlaceholder, $GreyPlaceholder, 16px);
+
+  &.textarea {
+    height: 100px;
+    resize: none;
+  }
+}
+
+.checkbox {
+  cursor: pointer;
+  clear: both;
+
+  span {
+    display: inline-block;
+  }
+
+  .main {
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+
+    width: 30px;
+    height: 30px;
+    float: left;
+  }
+
+  input[type=checkbox] {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+
+    &:checked + .main {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: $BloodOrange;
+
+        width: 2px;
+      }
+
+      &:after {
+        height: 28px;
+        transform: rotate(38deg);
+        left: 21px;
+        top: -4px;
+      }
+
+      &:before {
+        height: 14px;
+        transform: rotate(-43deg);
+        top: 8px;
+        left: 8px;
+      }
+    }
+  }
+
+  .text {
+    font-size: 16px;
+    text-align: left;
+    color: #061027;
+    margin: 8px 15px;
+  }
+}
+
+.form {
+  label:not(.checkbox) {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    text-align: left;
+    color: #061027;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: inline-block;
+    padding-left: 20px;
+
+    &.required {
+      position: relative;
+
+      &:before {
+        content: "*";
+        color: $BloodOrange;
+        top: -5px;
+        right: -10px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.btn.brn-orange {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+
+  padding: 7px 0 4px;
+  line-height: 32px;
+
+  border: none;
+  border-radius: 100px;
+  background-color: $Orange;
+  color: $White;
+  font-weight: bold;
+  @include font-size(16px);
+  @include transition(background-color);
+
+  &:hover, &:focus {
+    background-color: $LightOrangeBg;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

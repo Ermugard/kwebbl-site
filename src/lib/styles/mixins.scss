@@ -39,3 +39,50 @@
 
   font-size: ($raw-value / $raw-base-value) + rem;
 }
+
+@mixin transition($animation: all, $time: 0.3s, $anName: linear) {
+  transition: $animation $time $anName 0s;
+}
+
+@mixin placeholder($color, $focusColor, $fontSize: 1rem) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+  }
+
+  &:focus::-webkit-input-placeholder,
+  &:active::-webkit-input-placeholder {
+    color: $focusColor;
+    font-size: $fontSize;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $fontSize;
+  }
+  &:focus::-moz-placeholder,
+  &:active::-moz-placeholder {
+    color: $focusColor;
+    font-size: $fontSize;
+  }
+
+  &::placeholder {
+    color: $color;
+    font-size: $fontSize;
+  }
+  &:focus::placeholder,
+  &:active::placeholder {
+    color: $focusColor;
+    font-size: $fontSize;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $fontSize;
+  }
+  &:focus:-ms-input-placeholder,
+  &:active:-ms-input-placeholder {
+    color: $focusColor;
+    font-size: $fontSize;
+  }
+}
