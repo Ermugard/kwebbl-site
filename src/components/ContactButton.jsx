@@ -1,4 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
-export default () => (<Link className="nav-link contact-us" to="/contactUs"><span>Contact Us</span></Link>);
+export default () => (<NavLink className="nav-link contact-us" to="/contactUs"><span>Contact Us</span></NavLink>);

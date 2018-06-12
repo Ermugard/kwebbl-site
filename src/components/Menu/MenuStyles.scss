@@ -36,6 +36,14 @@
               font-stretch: normal;
               line-height: normal;
               letter-spacing: normal;
+
+              border-bottom: 2px solid transparent;
+              padding-bottom: 10px;
+
+              &.active {
+                color: $Orange;
+                border-bottom: 2px solid $Orange;
+              }
             }
           }
         }
@@ -55,6 +63,7 @@
       .contact-us, .burger-button {
         display: none;
       }
+
       .list {
         padding: 0;
         list-style: none;
@@ -84,7 +93,7 @@
 }
 
 // tablet
-@media (min-width: 321px) and ( max-width: 799px ) {
+@media (min-width: 321px) and (max-width: 799px) {
   .page-layout {
 
     header.header {
@@ -127,7 +136,6 @@
         }
       }
 
-
       .contact-us.nav-link {
         display: none;
       }
@@ -149,7 +157,7 @@
 
         .menu {
           height: 100%;
-          width: 40%;
+          width: 47%;
           background-color: $Orange;
           flex-direction: column;
           align-items: center;
@@ -162,7 +170,7 @@
 
           transition: width .2s, background-color .2s;
 
-          ul.list, &>.contact-us {
+          ul.list, & > .contact-us {
             @include flex-mix();
           }
 
@@ -178,18 +186,30 @@
                 font-size: 18px;
                 font-weight: 500;
                 text-decoration: none;
+
+                &.active {
+                  border-bottom: 2px solid #fff;
+                }
               }
             }
           }
 
-          &>.contact-us {
+          & > .contact-us {
             flex-grow: 0;
             margin-right: 0;
             padding-right: 0;
-            button {
-              width: 200px;
-              color: $Orange;
-              background-color: $White;
+            font-size: 18px;
+            text-decoration: none !important;
+            height: 35px;
+            margin-top: -14px;
+
+            span {
+              color: $White;
+              text-decoration: none !important;
+            }
+
+            &.active {
+              border-bottom: 2px solid $White;
             }
           }
 
@@ -199,7 +219,7 @@
             margin-right: 23px;
             .line {
               border-width: 2px;
-              border-color:$White;
+              border-color: $White;
 
               &_1 {
                 transform: rotate(45deg) translate(4px, 11px);
@@ -287,7 +307,7 @@
 
           transition: width .2s, background-color .2s;
 
-          ul.list, &>.contact-us {
+          ul.list, & > .contact-us {
             @include flex-mix();
           }
 
@@ -307,7 +327,7 @@
             }
           }
 
-          &>.contact-us {
+          & > .contact-us {
             @include flex-mix();
             align-items: flex-start;
             justify-content: flex-end;
@@ -315,7 +335,7 @@
             height: 102px;
             width: 100%;
 
-            button {
+            span {
               width: 100%;
               height: 42px;
               margin: 50px 15px 0;
@@ -334,7 +354,7 @@
             margin-right: 20px;
             .line {
               border-width: 2px;
-              border-color:$White;
+              border-color: $White;
 
               &_1 {
                 transform: rotate(45deg) translate(4px, 11px);

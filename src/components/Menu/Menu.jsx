@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import BurgerButton from "../BurgerButton";
 import ContactButton from '../ContactButton';
 
@@ -11,13 +11,13 @@ export default ({open, toggleMenu}) => (
   <BurgerButton onClick={toggleMenu}/>
   <ul className="list">
     <li className="list-item">
-      <Link className="nav-link" to="/service">For Service Provider</Link>
+      <NavLink activeClassName="active" className="nav-link" to="/service">For Service Provider</NavLink>
     </li>
     <li className="list-item">
-      <Link className="nav-link" to="/distributors">For IT Distributors</Link>
+      <NavLink activeClassName="active" className="nav-link" to="/distributors">For IT Distributors</NavLink>
     </li>
     <li className="list-item">
-      <Link className="nav-link" to="/culture">Culture</Link>
+      <NavLink activeClassName="active" className="nav-link" to="/culture">Culture</NavLink>
     </li>{/*
     <li className="list-item">
       <Link className="nav-link" to="/stories">Success Stories</Link>
