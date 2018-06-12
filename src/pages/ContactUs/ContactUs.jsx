@@ -6,6 +6,6 @@ import './ContactUs.css';
 export default () => (<div className="contact-us">
   <Header />
   <div className="content">
-
+    CONTACT US
   </div>
 </div>);

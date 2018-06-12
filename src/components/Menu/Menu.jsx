@@ -18,13 +18,13 @@ export default ({open, toggleMenu}) => (
     </li>
     <li className="list-item">
       <Link className="nav-link" to="/culture">Culture</Link>
-    </li>
+    </li>{/*
     <li className="list-item">
       <Link className="nav-link" to="/stories">Success Stories</Link>
     </li>
     <li className="list-item">
       <Link className="nav-link" to="/press">Press</Link>
-    </li>
+    </li>*/}
   </ul>
   <ContactButton />
 </div>
