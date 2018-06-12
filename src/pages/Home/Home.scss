@@ -286,7 +286,7 @@
               height: 630px;
             }
             .slick-dots {
-              bottom: 0;
+              bottom: -330px;
               & > h3 {
                 font-size: 22px;
                 font-weight: normal;
@@ -305,10 +305,10 @@
                   content: '';
                   z-index: -1;
                   position: absolute;
-                  left: 13%;
+                  left: 12%;
                   top: 126px;
                   height: 0;
-                  width: 74%;
+                  width: 76%;
                   border-top: 1px dashed $OrangeText;
                 }
 
@@ -631,7 +631,7 @@
               height: 630px;
             }
             .slick-dots {
-              bottom: 0;
+              bottom: -450px;
               & > h3 {
                 font-size: 22px;
                 font-weight: normal;
@@ -990,7 +990,7 @@
 
             .slick-slider {
               height: 100%;
-              margin-top: 50px;
+              margin-top: 90px;
               img {
                 max-width: 60%;
               }
@@ -1016,7 +1016,7 @@
               }
               .slick-dots {
                 bottom: auto;
-                top: -10px;
+                top: -55px;
 
                 ul {
                   @include flex-mix();

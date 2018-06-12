@@ -23,7 +23,7 @@ class HomeCarousel extends Component {
   render() {
     const settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
       className: "center",
       slidesToShow: 1,
@@ -39,7 +39,7 @@ class HomeCarousel extends Component {
       <div className="home-main-mobile-carousel">
         <h3>Work from Anywhere with any Device</h3>
         <Slider {...settings}>
-          {carouselData.map((item) => (<CarouselBlock item={item} />))}
+          {carouselData.map((item, i) => (<CarouselBlock key={`home-carousel-block-${i}`} item={item} />))}
         </Slider>
       </div>);
   }

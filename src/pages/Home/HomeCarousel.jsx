@@ -16,19 +16,18 @@ const dotsData = [{
   title: 'Conferencing, Video and Chat',
   text: 'Use your preferred communications solution to communicate to specific people or groups with the possibility of video, chat or conferencing with your mobile telephone, desktop or even the old fashioned phone.'
 }];
-const dotsCreator = (i) => (<div>
-  <div className={`number number_` + dotsData[i].number}>{dotsData[i].number}</div>
-  <h3>{dotsData[i].title}</h3>
-  <p>{dotsData[i].text}</p>
+const dotsCreator = (item) => (<div>
+  <div className={`number number_` + item.number}>{item.number}</div>
+  <h3>{item.title}</h3>
+  <p>{item.text}</p>
 </div>);
 
 class HomeCarousel extends Component {
   render() {
     const settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
       speed: 500,
-      className: "center",
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
@@ -38,15 +37,15 @@ class HomeCarousel extends Component {
         <h3>Work from Anywhere with any Device</h3>
         <ul>{dots}</ul>
       </div>),
-      customPaging: i => (dotsCreator(i))
+      customPaging: i => (dotsCreator(dotsData[i]))
     };
 
     return (
       <div className="home-main-carousel">
-        <Slider className="home-main-carousel" {...settings}>
-          <div><img src={imgSrc}/></div>
-          <div><img src={imgSrc}/></div>
-          <div><img src={imgSrc}/></div>
+        <Slider {...settings}>
+          <div key="carousel-item-1"><img src={imgSrc}/></div>
+          <div key="carousel-item-2"><img src={imgSrc}/></div>
+          <div key="carousel-item-3"><img src={imgSrc}/></div>
         </Slider>
       </div>);
   }
