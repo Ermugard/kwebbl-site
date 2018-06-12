@@ -43,8 +43,7 @@
   .page-layout {
     @include flex-mix();
     margin: 0 auto;
-    max-width: 799px;
-    min-width: 321px;
+    width: 100%;
 
     header.header {
       @include flex-mix();

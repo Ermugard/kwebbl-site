@@ -55,8 +55,7 @@
     display: -webkit-flex;
     display: flex;
     margin: 0 auto;
-    max-width: 799px;
-    min-width: 321px; }
+    width: 100%; }
     .page-layout header.header {
       display: -webkit-box;
       display: -moz-box;
