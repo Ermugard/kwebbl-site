@@ -1,7 +1,10 @@
 import React from 'react';
 
+import Carousel from '../../../pages/Home/HomeMobileSecondSectionCarousel';
+
 import imgSrc from '../../../public/images/home-section2.png';
 import CheckedCircle from '../../../public/svgIcons/checked-circle.js';
+
 
 export default () => (<section className="section_2">
   <div className="content">
@@ -36,6 +39,8 @@ export default () => (<section className="section_2">
             <p>Our interface gives users quick insight in what is happening in their company. Easily browse the CDR’s, dive into Queue statistics or overview all active calls using the Operator Console.</p>
           </li>
         </ul>
+
+        <Carousel />
       </div>
       <div className="right">
         <img src={imgSrc} alt="dialplan" title="dialplan" />

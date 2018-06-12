@@ -101,7 +101,8 @@
     justify-content: space-between;
     -webkit-justify-content: space-between;
     align-items: flex-start;
-    -webkit-align-items: flex-start; }
+    -webkit-align-items: flex-start;
+    height: 150px; }
     .page-layout header.header .logo {
       width: 273px;
       height: 208px;
