@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import PageLayout from './pages/PageLayout';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
+    console.log(this.props);
+
     return (
-      <HashRouter>
-        <div className="App">
-          <PageLayout />
-          <Footer />
-        </div>
-      </HashRouter>
+      <BrowserRouter>
+        <Route
+          render={({ location }) => (
+            <div className={"App page-" + (location.pathname && location.pathname.replace("/", ""))}>
+              <PageLayout location={location} />
+              <Footer />
+            </div>
+          )}
+        />
+      </BrowserRouter>
     );
   }
 }
