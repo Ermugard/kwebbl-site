@@ -1,3 +1,4 @@
+@import '../../lib/styles/colors.scss';
 @import '../../lib/styles/mixins.scss';
 
 .styles_overlayCenter__YHoO7 {
@@ -140,7 +141,7 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: $xs) and (max-width: 800px) {
   .notSureModal {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -173,7 +174,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: $md) {
   .notSureModal {
     width: 80%;
   }

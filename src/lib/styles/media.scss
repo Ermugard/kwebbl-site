@@ -1,4 +1,5 @@
 @import './mixins.scss';
+@import './colors.scss';
 
 .home,
 .service,
@@ -10,7 +11,7 @@
 }
 
 /* desktop */
-@media ( min-width: 800px ) {
+@media ( min-width: $md ) {
   .app {
     @include flex-mix();
     flex-direction: column;
@@ -39,7 +40,7 @@
 }
 
 /* tablet */
-@media ( min-width: 321px ) and ( max-width: 799px ) {
+@media ( min-width: $xs ) and ( max-width: $md ) {
   .page-layout {
     @include flex-mix();
     margin: 0 auto;
@@ -58,7 +59,7 @@
 
 
 /* mobile */
-@media ( max-width: 320px ) {
+@media ( max-width: $xs - 1 ) {
   .page-layout {
     @include flex-mix();
     margin: 0 auto;

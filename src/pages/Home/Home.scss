@@ -1,7 +1,7 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
-@media (min-width: 800px) {
+@media (min-width: $md) {
   .home {
     .section {
       &_1 {
@@ -372,12 +372,11 @@
         }
       }
     }
-
   }
 }
 
 // tablet
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: $sm + 1) and (max-width: $md) {
   .home {
     .section {
       &_1 {
@@ -721,7 +720,7 @@
 }
 
 // mobile
-@media (max-width: 320px) {
+@media ( min-width: $xs )  and  ( max-width: $sm ) {
   .page-layout {
     .home {
 
@@ -1087,10 +1086,22 @@
   }
 }
 
+@media screen and (min-width: $md) {
+  .home {
+    .slick-slide > div {
+      text-align: center;
+    }
+
+    .slick-arrow {
+      z-index: 2000;
+    }
+  }
+}
+
 .home {
   .slick-list {
     overflow: hidden;
-    margin-left: 50px !important;
+    //margin-left: 50px !important;
   }
 
   .slick-arrow {

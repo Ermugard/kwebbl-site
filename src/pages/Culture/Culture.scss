@@ -258,16 +258,24 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: $sm) and (max-width: $md) {
+}
+
+@media (min-width: $xs) and (max-width: $md) {
   .culture .content {
     margin-left: 0;
   }
-
-  .slick-dots {
-    display: block !important;
+  .culture .content {
+    text-align: center;
   }
 
-  .slick-arrow {
-    display: none !important;
+  .culture {
+    .slick-dots {
+      display: block !important;
+    }
+
+    .slick-arrow {
+      display: none !important;
+    }
   }
 }

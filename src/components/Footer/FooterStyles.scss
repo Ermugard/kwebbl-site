@@ -14,7 +14,7 @@ footer.footer {
   }
 }
 
-@media ( min-width: 800px ) {
+@media ( min-width: $md ) {
   footer.footer {
     height: 623px;
     background-color: $RedOrangeBg;
@@ -106,7 +106,7 @@ footer.footer {
 }
 
 // tablet
-@media ( min-width: 321px ) and ( max-width: 799px ) {
+@media (min-width: $sm + 1) and (max-width: $md) {
   footer.footer {
     background-color: $RedOrangeBg;
     flex-direction: column;
@@ -197,7 +197,7 @@ footer.footer {
 }
 
 // mobile
-@media ( max-width: 320px ) {
+@media (min-width: $xs) and (max-width: $sm) {
   footer.footer {
     background-color: $RedOrangeBg;
     flex-direction: column;

@@ -6,6 +6,10 @@ import imgSrc from '../../public/images/home-section6.png';
 import IconActive from '../../public/images/home/icon-grey.png';
 import Icon from '../../public/images/home/icon.png';
 
+
+import PrevArrow from '../../components/SliderArrows/Prev';
+import NextArrow from '../../components/SliderArrows/Next';
+
 const dotsData = [{
   number: 1,
   title: 'Work anywhere',
@@ -26,65 +30,6 @@ const dotsCreator = (item) => (<div>
   <p>{item.text}</p>
 </div>);
 
-class SampleNextArrow extends React.Component {
-  state = {
-    hover: false
-  };
-
-  render() {
-    const { className, style, onClick } = this.props;
-
-    return (
-      <div
-        onMouseEnter={e => {
-          this.setState({
-            hover: true
-          })
-        }}
-        onMouseLeave={e => {
-          this.setState({
-            hover: false
-          })
-        }}
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      >
-        <img src={this.state.hover ? IconActive : Icon} alt=""/>
-      </div>
-    );
-  }
-}
-
-class SamplePrevArrow extends React.Component {
-  state = {
-    hover: false
-  };
-
-  render() {
-    const { className, style, onClick } = this.props;
-
-    return (
-      <div
-        onMouseEnter={e => {
-          this.setState({
-            hover: true
-          })
-        }}
-        onMouseLeave={e => {
-          this.setState({
-            hover: false
-          })
-        }}
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      >
-        <img src={this.state.hover ? IconActive : Icon} alt=""/>
-      </div>
-    );
-  }
-}
 class HomeCarousel extends Component {
   render() {
     const settings = {
@@ -95,9 +40,8 @@ class HomeCarousel extends Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       adaptiveHeight: true,
-      variableWidth: true,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />,
       appendDots: dots => (<div className="thumbs">
         <h3>Work from Anywhere with any Device</h3>
         <ul>{dots}</ul>

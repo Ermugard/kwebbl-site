@@ -46,7 +46,7 @@
   }
 }
 
-@media ( min-width: 800px ) {
+@media ( min-width: $md + 1 ) {
   .service {
     .section {
       &_1 {
@@ -290,7 +290,7 @@
 }
 
 // tablet
-@media ( min-width: 321px ) and ( max-width: 799px ) {
+@media (min-width: $sm + 1) and (max-width: $md) {
   .service {
     .content {
       @include flex-mix();
@@ -451,7 +451,7 @@
 }
 
 // mobile
-@media ( max-width: 320px ) {
+@media (min-width: $xs) and (max-width: $sm) {
   .service {
     .content {
       @include flex-mix();
