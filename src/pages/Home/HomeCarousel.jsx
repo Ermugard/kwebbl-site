@@ -20,10 +20,10 @@ const dotsData = [{
   text: 'Use your preferred communications solution to communicate to specific people or groups with the possibility of video, chat or conferencing with your mobile telephone, desktop or even the old fashioned phone.'
 }];
 
-const dotsCreator = (i) => (<div>
-  <div className={`number number_` + dotsData[i].number}>{dotsData[i].number}</div>
-  <h3>{dotsData[i].title}</h3>
-  <p>{dotsData[i].text}</p>
+const dotsCreator = (item) => (<div>
+  <div className={`number number_` + item.number}>{item.number}</div>
+  <h3>{item.title}</h3>
+  <p>{item.text}</p>
 </div>);
 
 class SampleNextArrow extends React.Component {

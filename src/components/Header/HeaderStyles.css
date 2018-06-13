@@ -37,7 +37,7 @@
         height: 128px;
         margin-right: 30px;
         text-decoration: none !important; }
-        .page-layout header.header .contact-us a {
+        .page-layout header.header .contact-us a.nav-link {
           width: 140px;
           height: 32px;
           text-align: center;
@@ -49,9 +49,10 @@
           background-color: #ef4500;
           color: #fff;
           font-weight: bold;
-          font-size: 1.06667rem;
+          line-height: 32px;
+          font-size: 16px;
           transition: background-color 0.3s linear 0s; }
-          .page-layout header.header .contact-us a:hover, .page-layout header.header .contact-us a:focus {
+          .page-layout header.header .contact-us a.nav-link:hover, .page-layout header.header .contact-us a.nav-link:focus {
             background-color: #f87a03; } }
 
 @media (min-width: 321px) and (max-width: 799px) {
@@ -85,7 +86,7 @@
       flex-grow: 1;
       height: 102px;
       margin-right: 30px; }
-      .page-layout header.header .contact-us span {
+      .page-layout header.header .contact-us a.nav-link {
         text-decoration: none;
         text-align: center;
         line-height: 42px;
@@ -93,8 +94,8 @@
         height: 42px;
         border: none;
         border-radius: 100px;
-        background-color: #fff;
-        color: #ef4500;
+        background-color: #ef4500;
+        color: #fff;
         font-weight: bold;
         font-size: 1.06667rem; }
     .page-layout header.header.open .contact-us {
