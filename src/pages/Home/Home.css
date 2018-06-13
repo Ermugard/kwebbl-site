@@ -921,3 +921,18 @@
             .page-layout .home .section_6 .carousel .slick-slider .slick-dots ul li.slick-active h3, .page-layout .home .section_6 .carousel .slick-slider .slick-dots ul li.slick-active p {
               opacity: 1;
               color: #fb8e0d; } }
+
+.home .slick-list {
+  overflow: hidden;
+  margin-left: 50px !important; }
+
+.home .slick-arrow {
+  background: transparent !important; }
+  .home .slick-arrow:before {
+    display: none; }
+  .home .slick-arrow img {
+    margin-top: 0 !important; }
+  .home .slick-arrow.slick-next:not(:hover) img {
+    transform: rotate(180deg); }
+  .home .slick-arrow.slick-prev:hover img {
+    transform: rotate(180deg); }

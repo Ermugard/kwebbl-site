@@ -1,0 +1,15 @@
+.transition-group {
+  width: 100%; }
+  .transition-group > div {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.3s linear 0s; }
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1; }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in; }

@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React, {Component} from "react";
+=======
+import React, { Component } from "react";
+>>>>>>> 9842a83fa2c2230d5ccea833017dce890b729111
 import Slider from "react-slick";
 
 import imgSrc from '../../public/images/home-section6.png';
+
+import IconActive from '../../public/images/home/icon-grey.png';
+import Icon from '../../public/images/home/icon.png';
 
 const dotsData = [{
   number: 1,
@@ -16,10 +23,78 @@ const dotsData = [{
   title: 'Conferencing, Video and Chat',
   text: 'Use your preferred communications solution to communicate to specific people or groups with the possibility of video, chat or conferencing with your mobile telephone, desktop or even the old fashioned phone.'
 }];
+<<<<<<< HEAD
 const dotsCreator = (item) => (<div>
   <div className={`number number_` + item.number}>{item.number}</div>
   <h3>{item.title}</h3>
   <p>{item.text}</p>
+=======
+
+class SampleNextArrow extends React.Component {
+  state = {
+    hover: false
+  };
+
+  render() {
+    const { className, style, onClick } = this.props;
+
+    return (
+      <div
+        onMouseEnter={e => {
+          this.setState({
+            hover: true
+          })
+        }}
+        onMouseLeave={e => {
+          this.setState({
+            hover: false
+          })
+        }}
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      >
+        <img src={this.state.hover ? IconActive : Icon} alt=""/>
+      </div>
+    );
+  }
+}
+
+class SamplePrevArrow extends React.Component {
+  state = {
+    hover: false
+  };
+
+  render() {
+    const { className, style, onClick } = this.props;
+
+    return (
+      <div
+        onMouseEnter={e => {
+          this.setState({
+            hover: true
+          })
+        }}
+        onMouseLeave={e => {
+          this.setState({
+            hover: false
+          })
+        }}
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      >
+        <img src={this.state.hover ? IconActive : Icon} alt=""/>
+      </div>
+    );
+  }
+}
+
+const dotsCreator = (i) => (<div>
+  <div className={`number number_` + dotsData[i].number}>{dotsData[i].number}</div>
+  <h3>{dotsData[i].title}</h3>
+  <p>{dotsData[i].text}</p>
+>>>>>>> 9842a83fa2c2230d5ccea833017dce890b729111
 </div>);
 
 class HomeCarousel extends Component {
@@ -33,6 +108,8 @@ class HomeCarousel extends Component {
       swipeToSlide: true,
       adaptiveHeight: true,
       variableWidth: true,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
       appendDots: dots => (<div className="thumbs">
         <h3>Work from Anywhere with any Device</h3>
         <ul>{dots}</ul>

@@ -1086,3 +1086,34 @@
     }
   }
 }
+
+.home {
+  .slick-list {
+    overflow: hidden;
+    margin-left: 50px !important;
+  }
+
+  .slick-arrow {
+    background: transparent !important;
+
+    &:before {
+      display: none;
+    }
+
+    img {
+      margin-top: 0 !important;
+    }
+
+    &.slick-next:not(:hover) {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    &.slick-prev:hover {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
