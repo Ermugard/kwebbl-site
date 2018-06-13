@@ -37,7 +37,7 @@
     letter-spacing: normal;
     margin-top: 20px; }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .service .section_1 .content {
     flex-direction: row;
     margin-top: 100px; }
@@ -226,7 +226,7 @@
       font-size: 22px;
       line-height: 1.45; } }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .service .content {
     display: -webkit-box;
     display: -moz-box;
@@ -353,7 +353,7 @@
     margin-top: 70px;
     margin-bottom: 100px; } }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .service .content {
     display: -webkit-box;
     display: -moz-box;

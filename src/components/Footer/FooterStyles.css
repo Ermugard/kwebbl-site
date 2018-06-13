@@ -104,7 +104,7 @@ footer.footer {
           width: 60px;
           justify-content: space-between; } }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 800px) {
   footer.footer {
     background-color: #ef4304;
     flex-direction: column; }
@@ -199,7 +199,7 @@ footer.footer {
           width: 60px;
           justify-content: space-between; } }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
   footer.footer {
     background-color: #ef4304;
     flex-direction: column; }

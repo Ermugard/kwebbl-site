@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .page-layout header.header .menu {
     height: 128px;
     max-width: 650px;
@@ -83,7 +83,7 @@
           line-height: normal;
           letter-spacing: normal; } }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .page-layout header.header .logo {
     order: 1; }
   .page-layout header.header .contact-us {
@@ -200,7 +200,7 @@
   footer.footer .menu {
     display: none; } }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .page-layout header.header .logo {
     order: 1; }
   .page-layout header.header .menu {

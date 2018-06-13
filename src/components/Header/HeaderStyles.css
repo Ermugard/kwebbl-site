@@ -55,7 +55,7 @@
           .page-layout header.header .contact-us a.nav-link:hover, .page-layout header.header .contact-us a.nav-link:focus {
             background-color: #f87a03; } }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .page-layout header.header {
     display: -webkit-box;
     display: -moz-box;
@@ -103,7 +103,7 @@
     .page-layout header.header.open .contact-us {
       display: none; } }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .page-layout header.header {
     display: -webkit-box;
     display: -moz-box;

@@ -325,7 +325,7 @@
               opacity: 1;
               color: #fb8e0d; } }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .home .section_1 .home-head-bg:before {
     content: "";
     background-color: #fff7e8;
@@ -624,7 +624,7 @@
               opacity: 1;
               color: #fb8e0d; } }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .page-layout .home .content {
     display: -webkit-box;
     display: -moz-box;
@@ -922,9 +922,14 @@
               opacity: 1;
               color: #fb8e0d; } }
 
+@media screen and (min-width: 800px) {
+  .home .slick-slide > div {
+    text-align: center; }
+  .home .slick-arrow {
+    z-index: 2000; } }
+
 .home .slick-list {
-  overflow: hidden;
-  margin-left: 50px !important; }
+  overflow: hidden; }
 
 .home .slick-arrow {
   background: transparent !important; }
