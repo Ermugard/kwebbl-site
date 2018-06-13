@@ -53,16 +53,25 @@ footer.footer {
         display: flex;
         flex-direction: column;
         justify-content: center; }
+        footer.footer .center .left:hover, footer.footer .center .right:hover {
+          cursor: pointer;
+          /*@include transition(transform);*/ }
       footer.footer .center .left {
         background-color: #f87a03;
         width: 35%;
         padding-right: 100px;
-        text-align: right; }
+        text-align: right;
+        /*&:hover {
+          transform: scaleX(1.1);
+        }*/ }
       footer.footer .center .right {
         background-color: #ffc115;
         width: 65%;
         padding-left: 100px;
-        text-align: left; }
+        text-align: left;
+        /*&:hover {
+          transform: scaleX(1.1);
+        }*/ }
       footer.footer .center .top-text, footer.footer .center .bottom-text {
         margin: 0; }
       footer.footer .center .top-text {

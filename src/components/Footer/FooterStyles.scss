@@ -52,18 +52,28 @@ footer.footer {
         @include flex-mix();
         flex-direction: column;
         justify-content: center;
+        &:hover {
+          cursor: pointer;
+          /*@include transition(transform);*/
+        }
       }
       .left {
         background-color: $LightOrangeBg;
         width: 35%;
         padding-right: 100px;
         text-align: right;
+        /*&:hover {
+          transform: scaleX(1.1);
+        }*/
       }
       .right {
         background-color: $LightYellowBg;
         width: 65%;
         padding-left: 100px;
         text-align: left;
+        /*&:hover {
+          transform: scaleX(1.1);
+        }*/
       }
       .top-text, .bottom-text {
         margin: 0;
