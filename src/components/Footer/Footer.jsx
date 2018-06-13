@@ -7,6 +7,8 @@ import './FooterStyles.css';
 import './NotSure.css';
 import logo from '../../public/images/small-logo-icon.png';
 
+import { NavLink } from "react-router-dom";
+
 import NotSureModal from './NotSureModal';
 
 export default class Footer extends React.Component {
@@ -15,6 +17,8 @@ export default class Footer extends React.Component {
   };
 
   onOpenModal = () => {
+    window.scrollTo(0,0);
+
     this.setState({ open: true });
   };
 
@@ -42,14 +46,14 @@ export default class Footer extends React.Component {
                 });
 
                 e && e.stopPropagation();
-                window.scrollTop(0);
+                window.scrollTo(0,0);
               }} />
             </Modal>
           </div>
-          <div className="right">
+          <NavLink to="/contactUs" className="right">
             <p className="top-text">Ready to get the ball rolling?</p>
             <p className="bottom-text">Get in touch with us today</p>
-          </div>
+          </NavLink>
         </div>
         <div className="bottom">
           <div>

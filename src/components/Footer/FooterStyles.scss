@@ -3,6 +3,15 @@
 
 footer.footer {
   z-index: 3;
+
+  .right {
+    text-decoration: none !important;
+
+    * {
+      color: $White;
+      text-decoration: none !important;
+    }
+  }
 }
 
 @media ( min-width: 800px ) {

@@ -1,3 +1,9 @@
+@import '../../lib/styles/mixins.scss';
+
+.styles_overlayCenter__YHoO7 {
+  display: block !important;
+}
+
 .notSureModal {
   min-width: 50%;
   max-width: 1140px;
@@ -138,7 +144,6 @@
   .notSureModal {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    margin-top: 42rem;
 
     &-blocks {
       .item {
