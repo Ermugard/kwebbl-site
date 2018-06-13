@@ -1,3 +1,6 @@
+.styles_overlayCenter__YHoO7 {
+  display: block !important; }
+
 .notSureModal {
   min-width: 50%;
   max-width: 1140px;
@@ -10,6 +13,8 @@
     top: 10px;
     left: auto;
     cursor: pointer; }
+    .notSureModal .close path {
+      transition: all 0.3s linear 0s; }
     .notSureModal .close:hover path {
       fill: #000; }
   .notSureModal .styles_closeIcon__1QwbI path {
@@ -83,8 +88,7 @@
 @media (min-width: 321px) and (max-width: 799px) {
   .notSureModal {
     padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin-top: 42rem; }
+    padding-right: 0.5rem; }
     .notSureModal-blocks .item {
       flex-basis: 100%;
       display: flex;

@@ -146,3 +146,14 @@
   .btn.btn-orange[disabled] {
     opacity: 0.3;
     pointer-events: none; }
+
+.slick-arrow {
+  background: transparent !important; }
+  .slick-arrow:before {
+    display: none; }
+  .slick-arrow img {
+    margin-top: 0 !important; }
+  .slick-arrow.slick-next:not(:hover) img {
+    transform: rotate(180deg); }
+  .slick-arrow.slick-prev:hover img {
+    transform: rotate(180deg); }
