@@ -7,7 +7,7 @@
       z-index: -1;
       position: absolute;
       top: -348px;
-      left: -25%;
+      left: -50%;
       width: 200%;
       height: 1000px;
       transform: skewY(-9deg); }
@@ -753,7 +753,7 @@
       z-index: -1;
       width: 200%;
       height: 100%;
-      left: -25%;
+      left: -50%;
       background-color: #fff7e8; }
     .page-layout .home .section_3 .content .left {
       display: none; }
