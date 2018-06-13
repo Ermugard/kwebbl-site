@@ -201,15 +201,12 @@
             font-size: 18px;
             text-decoration: none !important;
             height: 35px;
-            margin-top: -14px;
+            margin-top: 10px;
 
             span {
-              color: $White;
               text-decoration: none !important;
-            }
-
-            &.active {
-              border-bottom: 2px solid $White;
+              text-align: center;
+              line-height: 42px;
             }
           }
 

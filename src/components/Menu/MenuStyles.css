@@ -34,7 +34,12 @@
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
-        letter-spacing: normal; }
+        letter-spacing: normal;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 10px; }
+        .page-layout header.header .menu .list .list-item .nav-link.active {
+          color: #ef4500;
+          border-bottom: 2px solid #ef4500; }
   footer.footer .menu {
     height: 100%;
     max-width: 760px;
@@ -126,7 +131,7 @@
     display: block; }
   .page-layout header.header.open .menu {
     height: 100%;
-    width: 40%;
+    width: 47%;
     background-color: #ef4500;
     flex-direction: column;
     align-items: center;
@@ -155,14 +160,20 @@
           font-size: 18px;
           font-weight: 500;
           text-decoration: none; }
+          .page-layout header.header.open .menu ul.list .list-item .nav-link.active {
+            border-bottom: 2px solid #fff; }
     .page-layout header.header.open .menu > .contact-us {
       flex-grow: 0;
       margin-right: 0;
-      padding-right: 0; }
-      .page-layout header.header.open .menu > .contact-us button {
-        width: 200px;
-        color: #ef4500;
-        background-color: #fff; }
+      padding-right: 0;
+      font-size: 18px;
+      text-decoration: none !important;
+      height: 35px;
+      margin-top: 10px; }
+      .page-layout header.header.open .menu > .contact-us span {
+        text-decoration: none !important;
+        text-align: center;
+        line-height: 42px; }
     .page-layout header.header.open .menu .burger-button {
       width: 30px;
       height: 30px;
@@ -259,7 +270,7 @@
       flex-grow: 1;
       height: 102px;
       width: 100%; }
-      .page-layout header.header.open .menu > .contact-us button {
+      .page-layout header.header.open .menu > .contact-us span {
         width: 100%;
         height: 42px;
         margin: 50px 15px 0;
