@@ -56,7 +56,7 @@
   .distributors .content svg {
     margin-bottom: 35px; }
 
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .distributors .section_1 .content {
     margin-top: 52px; }
     .distributors .section_1 .content h2 {
@@ -86,7 +86,7 @@
       width: 200%;
       background-color: #fff7e8; } }
 
-@media (min-width: 321px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 800px) {
   .distributors .content {
     flex-direction: column; }
     .distributors .content .left, .distributors .content .right {
@@ -127,7 +127,7 @@
       width: 200%;
       background-color: #fff7e8; } }
 
-@media (max-width: 320px) {
+@media (min-width: 321px) and (max-width: 480px) {
   .distributors .content {
     flex-direction: column;
     margin-top: 50px;
