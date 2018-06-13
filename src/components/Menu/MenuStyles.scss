@@ -324,6 +324,10 @@
                 font-size: 18px;
                 font-weight: 500;
                 text-decoration: none;
+
+                &.active {
+                  border-bottom: 2px solid $White;
+                }
               }
             }
           }

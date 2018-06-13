@@ -263,6 +263,8 @@
           font-size: 18px;
           font-weight: 500;
           text-decoration: none; }
+          .page-layout header.header.open .menu ul.list .list-item .nav-link.active {
+            border-bottom: 2px solid #fff; }
     .page-layout header.header.open .menu > .contact-us {
       display: -webkit-box;
       display: -moz-box;
