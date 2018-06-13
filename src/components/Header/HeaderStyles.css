@@ -86,6 +86,8 @@
       flex-grow: 1;
       height: 102px;
       margin-right: 30px; }
+      .page-layout header.header .contact-us > .contact-us {
+        display: none !important; }
       .page-layout header.header .contact-us a.nav-link {
         text-decoration: none;
         text-align: center;

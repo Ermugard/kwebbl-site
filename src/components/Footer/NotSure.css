@@ -1,0 +1,105 @@
+.notSureModal {
+  min-width: 50%;
+  max-width: 1140px;
+  border-radius: 10px;
+  padding: 5rem 3rem;
+  text-align: center; }
+  .notSureModal .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    left: auto;
+    cursor: pointer; }
+    .notSureModal .close:hover path {
+      fill: #000; }
+  .notSureModal .styles_closeIcon__1QwbI path {
+    fill: #bbb; }
+  .notSureModal .header-tt-black {
+    font-size: 27px; }
+  .notSureModal-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.5rem 0 0 0; }
+    .notSureModal-blocks .item {
+      flex-basis: 33%;
+      padding: 1.5rem;
+      box-sizing: border-box; }
+      .notSureModal-blocks .item .img {
+        width: 159px;
+        height: 177px;
+        display: inline-block;
+        margin: 1rem auto 3em; }
+        .notSureModal-blocks .item .img.tablet {
+          display: none; }
+        .notSureModal-blocks .item .img img {
+          max-width: 100%;
+          height: auto; }
+      .notSureModal-blocks .item .name {
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.74;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px; }
+      .notSureModal-blocks .item .text {
+        height: 80px;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: center;
+        color: rgba(6, 16, 39, 0.5);
+        margin-bottom: 20px; }
+
+@media (min-width: 800px) and (max-width: 1020px) {
+  .notSureModal {
+    margin-top: 9rem; }
+    .notSureModal-blocks .item {
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left; }
+      .notSureModal-blocks .item .name, .notSureModal-blocks .item .text {
+        text-align: left; }
+      .notSureModal-blocks .item .one, .notSureModal-blocks .item .two {
+        flex-basis: 50%; }
+      .notSureModal-blocks .item .text {
+        height: auto; }
+      .notSureModal-blocks .item .btn {
+        padding-left: 35px;
+        padding-right: 35px; }
+      .notSureModal-blocks .item .img {
+        display: none; }
+        .notSureModal-blocks .item .img.tablet {
+          margin-top: 0 !important;
+          display: block; } }
+
+@media (min-width: 321px) and (max-width: 799px) {
+  .notSureModal {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 42rem; }
+    .notSureModal-blocks .item {
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      margin-bottom: 2rem; }
+      .notSureModal-blocks .item .two, .notSureModal-blocks .item .one {
+        flex-basis: 100%; }
+      .notSureModal-blocks .item .img {
+        display: block; }
+        .notSureModal-blocks .item .img.tablet {
+          display: none; }
+      .notSureModal-blocks .item .text {
+        height: auto; } }
+
+@media (min-width: 800px) {
+  .notSureModal {
+    width: 80%; } }
