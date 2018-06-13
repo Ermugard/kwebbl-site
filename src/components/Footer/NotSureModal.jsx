@@ -30,10 +30,7 @@ const LIST_FOR_BE_SURE = [
   }
 ];
 
-export default ({ close }) => {
-  console.log(close);
-
-  return <div className="notSure">
+export default ({ close }) => (<div className="notSure">
     <a className="close" >
       <svg className="styles_closeIcon__1QwbI" onClick={close} xmlns="http://www.w3.org/2000/svg" width="28" height="28"
            viewBox="0 0 36 36">
@@ -64,5 +61,4 @@ export default ({ close }) => {
       ))}
     </div>
   </div>
-
-};
+);

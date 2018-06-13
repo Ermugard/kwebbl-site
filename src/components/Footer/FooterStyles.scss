@@ -246,6 +246,25 @@ footer.footer {
         line-height: 1.26;
         letter-spacing: 1.6px;
         padding: 30px 16px;
+        padding-right: 20px;
+
+        position: relative;
+
+        &:after {
+          content: '🠦';
+          position: absolute;
+
+          right: 10px;
+          left: auto;
+          top: 50%;
+          margin-top: -15px;
+          height: 30px;
+
+          font-size: 20px;
+          color: $White;
+
+          z-index: 2;
+        }
       }
       .left {
         background-color: $LightOrangeBg;
@@ -253,6 +272,9 @@ footer.footer {
       .right {
         background-color: $LightYellowBg;
       }
+
+
+
       .top-text, .bottom-text {
         margin: 0;
       }
@@ -292,8 +314,12 @@ footer.footer {
 
         .social {
           @include flex-mix();
-          width: 60px;
+          width: 80px;
           justify-content: space-between;
+
+          a {
+            margin-right: 20px;
+          }
         }
       }
     }
