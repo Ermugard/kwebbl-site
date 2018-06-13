@@ -36,7 +36,14 @@ export default class Footer extends React.Component {
             <p className="bottom-text">Let us convince you</p>
 
             <Modal showCloseIcon={false} open={open} onClose={this.onCloseModal} center classNames={{ modal: "notSureModal" }}>
-              <NotSureModal close={() => this.onCloseModal()} />
+              <NotSureModal close={e => {
+                this.setState({
+                  open: false
+                });
+
+                e && e.stopPropagation();
+                window.scrollTop(0);
+              }} />
             </Modal>
           </div>
           <div className="right">

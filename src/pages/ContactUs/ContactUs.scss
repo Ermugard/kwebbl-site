@@ -88,17 +88,6 @@
     text-align: center;
     box-sizing: border-box;
 
-    .contact-form-white-back {
-      position: absolute;
-      transform: rotate(-15deg);
-      left: -1400px;
-      right: -1400px;
-      top: 31%;
-      z-index: -1;
-      background: #fff;
-      bottom: -500px;
-    }
-
     .contact-form {
       width: 870px;
       display: inline-block;
@@ -151,6 +140,19 @@
 
 .page-contactUs {
   background-color: rgba(255, 247, 229, 0.5);
+  position: relative;
+
+  &:after {
+    position: absolute;
+    transform: rotate(-15deg);
+    left: -1400px;
+    right: -1400px;
+    top: 60%;
+    z-index: 0;
+    background: #fff;
+    bottom: -500px;
+    content: "";
+  }
 
   .page-layout {
     max-width: 100%;
@@ -163,6 +165,11 @@
     .page-layout {
       max-width: 1260px;
     }
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-form-wrapper {
+    padding-bottom: 0 !important;
   }
 }
 

@@ -31,16 +31,13 @@ const LIST_FOR_BE_SURE = [
 ];
 
 export default ({ close }) => {
-  "use strict";
-
   console.log(close);
 
-  return   <div className="notSure">
+  return <div className="notSure">
     <a className="close" >
       <svg className="styles_closeIcon__1QwbI" onClick={close} xmlns="http://www.w3.org/2000/svg" width="28" height="28"
            viewBox="0 0 36 36">
-        <path
-          d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path>
+        <path d="M28.5 9.62L26.38 7.5 18 15.88 9.62 7.5 7.5 9.62 15.88 18 7.5 26.38l2.12 2.12L18 20.12l8.38 8.38 2.12-2.12L20.12 18z"></path>
       </svg>
     </a>
     <div className="header-orange">Not sure yet?</div>
@@ -56,11 +53,7 @@ export default ({ close }) => {
 
             <div className="name">{item.name}</div>
             <div className="text">{item.text}</div>
-            <NavLink to={item.link} className="btn btn-orange" onClick={() => {
-              "use strict";
-              console.log('click');
-              close();
-            }}>{item.button}</NavLink>
+            <NavLink to={item.link} className="btn btn-orange" onClick={close}>{item.button}</NavLink>
           </div>
           <div className="two">
             <div className="img tablet">

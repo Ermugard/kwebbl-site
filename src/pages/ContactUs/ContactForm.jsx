@@ -146,7 +146,6 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <div className="contact-form-wrapper">
-        <div className="contact-form-white-back" />
         <div className="contact-form form">
           <div>
             <h3 className="header-orange">contact us</h3>

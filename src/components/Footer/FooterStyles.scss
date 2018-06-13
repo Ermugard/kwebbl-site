@@ -1,6 +1,10 @@
 @import '../../lib/styles/mixins.scss';
 @import '../../lib/styles/colors.scss';
 
+footer.footer {
+  z-index: 3;
+}
+
 @media ( min-width: 800px ) {
   footer.footer {
     height: 623px;

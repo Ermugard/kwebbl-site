@@ -137,7 +137,10 @@
       }
 
       .contact-us {
-        display: none;
+
+        .contact-us {
+          display: none;
+        }
       }
 
       &.open {
