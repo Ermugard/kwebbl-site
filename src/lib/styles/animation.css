@@ -1,0 +1,22 @@
+.transition-group {
+  width: 100%; }
+  .transition-group > div {
+    position: relative;
+    width: 100%;
+    z-index: 1; }
+
+.visibility-enter {
+  opacity: 1;
+  z-index: 3; }
+
+.visibility-enter.visibility-enter-active {
+  opacity: 1;
+  visibility: visible; }
+
+.visibility-exit.visibility-exit-active {
+  opacity: 0;
+  z-index: 2;
+  visibility: hidden; }
+
+.visibility-exit {
+  opacity: 0.7; }
