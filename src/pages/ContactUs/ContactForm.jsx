@@ -133,15 +133,14 @@ export default class ContactForm extends React.Component {
 
     console.log('send email');
 
-    // fetch("sendEmail", {
-    //   mode: 'no-cors',
-    //   method: 'post',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(this.state.model)
-    // });
+    fetch("http://localhost:4000/sendEmail", {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(this.state.model)
+    });
   };
 
   render() {
@@ -200,7 +199,7 @@ export default class ContactForm extends React.Component {
               </div>
 
               <div className="contact-block">
-                <button className="btn brn-orange" disabled={!this.checkIfValidForm()} onClick={this.sendEmail}>Send</button>
+                <button className="btn btn-orange" disabled={!this.checkIfValidForm()} onClick={this.sendEmail}>Send</button>
               </div>
             </div>
 
