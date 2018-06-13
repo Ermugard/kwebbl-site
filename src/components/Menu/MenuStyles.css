@@ -127,8 +127,8 @@
     left: 0;
     top: 0;
     bottom: 0; }
-  .page-layout header.header.open .contact-us.nav-link {
-    display: block; }
+  .page-layout header.header.open .contact-us {
+    display: none; }
   .page-layout header.header.open .menu {
     height: 100%;
     width: 47%;

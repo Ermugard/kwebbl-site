@@ -38,7 +38,7 @@ class CultureCarousel extends Component {
     };
 
     return (<Slider {...settings}>
-      {sliderData.map((item) => (<CustomSlideBlock item={item} />))}
+      {sliderData.map((item, i) => (<CustomSlideBlock item={item} key={`cultere-carusel-item-${i}`} />))}
     </Slider>);
   }
 }

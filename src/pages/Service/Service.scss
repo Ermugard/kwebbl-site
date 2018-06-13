@@ -2,6 +2,11 @@
 @import '../../lib/styles/colors.scss';
 
 .service {
+
+  .section_4 {
+    display: none;
+  }
+
   .content {
     @include flex-mix();
     margin: 0 30px;
@@ -286,10 +291,295 @@
 
 // tablet
 @media ( min-width: 321px ) and ( max-width: 799px ) {
+  .service {
+    .content {
+      @include flex-mix();
+      flex-direction: column;
+      margin: 0;
 
+      .left, .right {
+        @include flex-mix();
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h3, h2, p {
+        text-align: center;
+        font-style: normal;
+        font-stretch: normal;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        color: $PumpkinOrange;
+        margin-top: 35px;
+      }
+      h2 {
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 1.52;
+        letter-spacing: 2.3px;
+        margin-top: 5px;
+      }
+      p {
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1.45;
+        letter-spacing: normal;
+        margin-top: 20px;
+        max-width: 560px;
+      }
+      img {
+        margin-top: 70px;
+        max-width: 585px;
+      }
+      svg {
+        margin-bottom: 0;
+      }
+    }
+
+    .section {
+      &_1 { .content {
+        .left {
+          h3 {
+            margin-top: 0;
+          }
+          h2 {
+            font-size: 32px;
+            line-height: 1.5;
+            letter-spacing: 2.5px;
+          }
+        }
+      }}
+      &_2 { .content {
+        margin-top: 110px;
+        h2 {
+          max-width: 300px;
+        }
+      }}
+      &_3 { .content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        flex-direction: column-reverse;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: -25%;
+          height: 100%;
+          width: 200%;
+          background-color: $OffWhiteBg;
+        }
+      }}
+      &_4 { .content {}}
+      &_5 { .content {
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        h2 {
+          max-width: 531px;
+        }
+      }}
+      &_6 { .content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: -25%;
+          height: 100%;
+          width: 200%;
+          background-color: $OffWhiteBg;
+        }
+        h2 {
+          margin-top: 35px;
+          max-width: 400px;
+        }
+        p {
+          max-width: 510px;
+        }
+      }}
+      &_7 { .content {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        h2 {
+          margin-top: 35px;
+          max-width: 400px;
+        }
+        p {
+          max-width: 510px;
+        }
+      }}
+      &_8 { .content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: -25%;
+          height: 100%;
+          width: 200%;
+          background-color: $OffWhiteBg;
+        }
+        h2 {
+          margin-top: 35px;
+          max-width: 400px;
+        }
+        p {
+          max-width: 510px;
+        }
+      }}
+      &_9 { .content {
+        flex-direction: column-reverse;
+        margin-top: 70px;
+        margin-bottom: 100px;
+      }}
+    }
+  }
 }
 
 // mobile
 @media ( max-width: 320px ) {
+  .service {
+    .content {
+      @include flex-mix();
+      flex-direction: column;
+      margin: 0;
 
+      .left, .right {
+        @include flex-mix();
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h3, h2, p {
+        text-align: center;
+        font-style: normal;
+        font-stretch: normal;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        color: $PumpkinOrange;
+      }
+      h2 {
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 1.74;
+        letter-spacing: 1.6px;
+        margin-top: 10px;
+      }
+      p {
+        opacity: 0.5;
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        max-width: 288px;
+      }
+      img {
+        margin-top: 50px;
+        max-width: 288px;
+      }
+      svg {
+        display: none;
+      }
+    }
+    .section {
+      &_1 { .content {
+        h2 {
+          max-width: 200px;
+          font-size: 21px;
+          line-height: 1.43;
+        }
+      }}
+      &_2 { .content {
+        margin-top: 70px;
+        h2 {
+          max-width: 230px;
+        }
+      }}
+      &_3 { .content {
+        flex-direction: column-reverse;
+        margin-top: 70px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: -25%;
+          height: 100%;
+          width: 200%;
+          background-color: $OffWhiteBg;
+        }
+      }}
+      &_4 { .content {}}
+      &_5 { .content {
+        margin: 70px 16px;
+        h2 {
+          max-width: 288px;
+        }
+      }}
+      &_6 { .content {
+        margin-top: 70px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: -25%;
+          height: 100%;
+          width: 200%;
+          background-color: $OffWhiteBg;
+        }
+      }}
+      &_7 { .content {
+        flex-direction: column-reverse;
+        margin-top: 70px;
+        margin-bottom: 70px;
+      }}
+      &_8 { .content {
+        margin-top: 70px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: -25%;
+          height: 100%;
+          width: 200%;
+          background-color: $OffWhiteBg;
+        }
+      }}
+      &_9 { .content {
+        flex-direction: column-reverse;
+        margin-top: 70px;
+        margin-bottom: 70px;
+      }}
+    }
+  }
 }

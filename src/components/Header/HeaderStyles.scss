@@ -28,7 +28,7 @@
         margin-right: 30px;
         text-decoration: none !important;
 
-        span {
+        a {
           width: 140px;
           height: 32px;
           text-align: center;
@@ -68,6 +68,7 @@
           display: none;
         }
       }
+      
       .contact-us {
         @include flex-mix();
         align-items: center;
@@ -77,6 +78,9 @@
         margin-right: 30px;
 
         span {
+          text-decoration: none;
+          text-align: center;
+          line-height: 42px;
           width: 140px;
           height: 42px;
           border: none;
@@ -103,6 +107,7 @@
 
     header.header {
       @include header-mix();
+      height: 100px;
       .logo {
         width: 273px;
         height: 208px;
