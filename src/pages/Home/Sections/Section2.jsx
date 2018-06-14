@@ -14,7 +14,7 @@ export default () => (<section className="section_2">
         lovable business phone system</h2>
     </div>
     <div className="content-main">
-      <div className="left">
+      <div className="left text-block">
         <h3>Intuitive</h3>
         <h2>User Interface</h2>
         <ul>
@@ -42,7 +42,7 @@ export default () => (<section className="section_2">
 
         <Carousel />
       </div>
-      <div className="right">
+      <div className="right image-block">
         <img src={imgSrc} alt="dialplan" title="dialplan" />
       </div>
     </div>

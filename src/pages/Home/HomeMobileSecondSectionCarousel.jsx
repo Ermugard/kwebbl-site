@@ -29,11 +29,9 @@ class HomeCarousel extends Component {
       dots: true,
       infinite: false,
       speed: 500,
-      className: "center",
       slidesToShow: 1,
       slidesToScroll: 1,
       swipeToSlide: true,
-      variableWidth: false,
       appendDots: dots => (<div className="thumbs">
         <ul>{dots}</ul>
       </div>),
