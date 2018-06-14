@@ -57,7 +57,9 @@ export default class Footer extends React.Component {
         </div>
         <div className="bottom">
           <div>
-            <img src={logo} alt="Kwebbl" title="Kwebbl"/>
+            <NavLink to="/">
+              <img src={logo} alt="Kwebbl" title="Kwebbl"/>
+            </NavLink>
             <FooterMenu />
             <Social />
           </div>
