@@ -983,6 +983,8 @@
     display: none; }
   .home .slick-arrow img {
     margin-top: 0 !important; }
+  .home .slick-arrow.slick-next {
+    right: 25px; }
   .home .slick-arrow.slick-next:not(:hover) img {
     transform: rotate(180deg); }
   .home .slick-arrow.slick-prev:hover img {

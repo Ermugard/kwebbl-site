@@ -1214,6 +1214,10 @@
       margin-top: 0 !important;
     }
 
+    &.slick-next {
+      right: 25px;
+    }
+
     &.slick-next:not(:hover) {
       img {
         transform: rotate(180deg);
