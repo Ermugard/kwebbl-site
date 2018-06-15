@@ -127,13 +127,10 @@ export default class ContactForm extends React.Component {
   sendEmail = () => {
     if (!this.checkIfValidForm()) {
       alert('Not Valid Form');
-
       return;
     }
 
-    console.log('send email');
-
-    fetch("http://localhost:4000/sendEmail", {
+    fetch("http://sendEmail", {
       method: 'post',
       headers: {
         'Accept': 'application/json',

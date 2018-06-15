@@ -13,8 +13,6 @@ app.use(function(req, res, next) {
 
 app.get('/sendMail', function (req, res) {
   console.log("send mail");
-  // res.sendfile('index.html');
-  // res.sendfile(__dirname + '/public/index.html');
   res.status(201).send({ "status": 201 });
 
 });
