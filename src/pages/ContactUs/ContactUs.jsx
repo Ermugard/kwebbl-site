@@ -15,43 +15,43 @@ import './ContactUs.css';
 const CONTACTS_LIST = [
   {
     imgSrc: Amsterdam,
-    city: "Netherlands",
-    country: "Amsterdam",
+    city: "Amsterdam",
+    country: "Netherlands",
     street: "Modemstraat 1",
     address: "1033 RW Amsterdam",
-    phone: "+31 20 3080 700"
+    phone: "+31 20 30 80 700"
   },
   {
     imgSrc: Baar,
-    city: "Switzerland",
-    country: "BAAR",
+    city: "BAAR",
+    country: "Switzerland",
     street: "Haldenstrasse 5",
     address: "6340 Baar",
     phone: ""
   },
   {
     imgSrc: Berlin,
-    city: "German",
-    country: "Berlin",
-    street: "Moskovsky",
-    address: "Prospekt 11a",
-    phone: "04073"
+    city: "Berlin",
+    country: "Germany",
+    street: "Straβe der Pariser Kommune 12-16",
+    address: "D-10243 Berlin",
+    phone: "Kwebbl Deutschland GmbH"
   },
   {
     imgSrc: Kiev,
-    city: "Ukraine",
-    country: "Kiev",
-    street: "Moskovsky",
-    address: "Prospekt 11a",
-    phone: "04073"
+    city: "Kyiv",
+    country: "Ukraine",
+    street: "Kurenivskiy Lane 12KA",
+    address: "04073 Kyiv",
+    phone: "Kwebbl Kyiv"
   },
   {
     imgSrc: Nordic,
-    city: "Nordic &",
-    country: "Baltic",
-    street: "Moskovsky",
-    address: "Prospekt 11a",
-    phone: "04073"
+    city: "Amsterdam",
+    country: "Netherlands",
+    street: "Modemstraat 1",
+    address: "1033 RW Amsterdam",
+    phone: "Kwebbl Nordic-Baltic BV"
   }
 ];
 
@@ -103,8 +103,8 @@ export default () => (<div className="contact-us">
                 <img src={contact.imgSrc} alt=""/>
               </div>
 
-              <div className="header-orange">{contact.city}</div>
-              <div className="header-tt-black">{contact.country}</div>
+              <div className="header-orange">{contact.country}</div>
+              <div className="header-tt-black">{contact.city}</div>
 
               <div className="contact-item-address">
                 <div>{contact.street}</div>
