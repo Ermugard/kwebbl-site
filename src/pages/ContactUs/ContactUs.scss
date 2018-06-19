@@ -88,6 +88,36 @@
     text-align: center;
     box-sizing: border-box;
 
+    .result-message {
+      display: none;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $White;
+      opacity: .5;
+      color: $GreenText;
+
+      &.open {
+        @include flex-mix();
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      &.error {
+        color: $RedOrangeBg;
+      }
+
+      span {
+        padding: 16px 30px;
+        font-size: 27px;
+        font-weight: bold;
+      }
+    }
+
     .contact-form {
       width: 870px;
       display: inline-block;
@@ -149,7 +179,7 @@
     right: -1400px;
     top: 60%;
     z-index: 0;
-    background: #fff;
+    background: $White;
     bottom: -500px;
     content: "";
   }

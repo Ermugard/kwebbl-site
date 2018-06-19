@@ -60,6 +60,9 @@ const FORM_ELEMENTS = [
 export default class ContactForm extends React.Component {
   state = {
     isChanged: false,
+    resultText: '',
+    successMailSend: true,
+    showResultMessage: false,
     model: {
       name: "",
       company: "",
@@ -77,6 +80,37 @@ export default class ContactForm extends React.Component {
       subject: true,
       message: true,
     }
+  };
+
+  closeResultMessage = () => {
+    this.setState({
+      resultText: '',
+      successMailSend: true,
+      showResultMessage: false
+    });
+  };
+
+  showSuccessMessage = () => {
+    this.setState({
+      resultText: 'Email was send successfully.',
+      successMailSend: true,
+      showResultMessage: true
+    });
+
+    setTimeout(() => {
+      this.closeResultMessage();
+    }, 3000);
+  };
+
+  showErrorMessage = () => {
+    this.setState({
+      resultText: 'During sending email, some error occurred.',
+      successMailSend: false,
+      showResultMessage: true
+    });
+    setTimeout(() => {
+      this.closeResultMessage();
+    }, 3000);
   };
 
   isEmailValid = email => (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email));
@@ -120,8 +154,8 @@ export default class ContactForm extends React.Component {
 
   checkIfValidForm = () => {
     return Object.keys(this.state.valid).every(el => {
-      return this.state.valid[el] === true;
-    }) && this.state.isChanged;
+        return this.state.valid[el] === true;
+      }) && this.state.isChanged;
   };
 
   sendEmail = () => {
@@ -130,19 +164,31 @@ export default class ContactForm extends React.Component {
       return;
     }
 
-    fetch("http:4000//sendEmail", {
+    fetch("http://localhost:4000/sendEmail", {
       method: 'post',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(this.state.model)
+    }).then((res) => {
+      console.log(res);
+      this.showSuccessMessage();
+    }).catch((err) => {
+      console.log(err);
+      this.showErrorMessage();
     });
   };
 
   render() {
     return (
       <div className="contact-form-wrapper">
+        <div
+          className={`result-message ${this.state.successMailSend? 'success': 'error'} ${this.state.showResultMessage? 'open': ''}`}
+          onClick={this.closeResultMessage}
+        >
+          <span>{this.state.resultText}</span>
+        </div>
         <div className="contact-form form">
           <div>
             <h3 className="header-orange">contact us</h3>

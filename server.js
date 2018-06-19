@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const nodemailer = require('nodemailer');
 
 app.use(express.static(path.join(__dirname, 'build')));
 
@@ -24,7 +25,7 @@ app.options('/sendMail', function (req, res) {
 });
 
 app.post('/sendMail', function (req, res) {
-  console.log("send mail");
+  console.log("send mail", req);
   res.status(201).send({ "status": 201 });
 
 });
