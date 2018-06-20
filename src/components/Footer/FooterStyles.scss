@@ -54,7 +54,7 @@ footer.footer {
         justify-content: center;
         &:hover {
           cursor: pointer;
-          /*@include transition(transform);*/
+          @include transition(transform);
         }
       }
       .left {
@@ -62,18 +62,22 @@ footer.footer {
         width: 35%;
         padding-right: 100px;
         text-align: right;
-        /*&:hover {
-          transform: scaleX(1.1);
-        }*/
+        @include transition(width, 0.3s, ease-in-out);
+        &:hover {
+          width: 40%;
+          @include transition(width, 0.3s, ease-in-out);
+        }
       }
       .right {
         background-color: $LightYellowBg;
         width: 65%;
         padding-left: 100px;
         text-align: left;
-        /*&:hover {
-          transform: scaleX(1.1);
-        }*/
+        @include transition(width, 0.3s, ease-in-out);
+        &:hover {
+          width: 75%;
+          @include transition(width, 0.3s, ease-in-out);
+        }
       }
       .top-text, .bottom-text {
         margin: 0;
@@ -261,7 +265,7 @@ footer.footer {
         position: relative;
 
         &:after {
-          content: '🠦';
+          content: '\1F826';
           position: absolute;
 
           right: 10px;
