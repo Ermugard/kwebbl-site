@@ -164,7 +164,7 @@ export default class ContactForm extends React.Component {
       return;
     }
 
-    fetch("http://localhost:4000/sendEmail", {
+    fetch("/sendEmail", {
       method: 'post',
       headers: {
         'Accept': 'application/json',
